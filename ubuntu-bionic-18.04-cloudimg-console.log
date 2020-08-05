@@ -659,3 +659,522 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6YAwEdzs8X98lwmSDSE9J3Hp43YXDYSfzGJCN84OA
 [  158.059579] cloud-init[1149]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'modules:final' at Sun, 19 Jul 2020 05:05:49 +0000. Up 155.02 seconds.
 [  158.134871] cloud-init[1149]: ci-info: no authorized SSH keys fingerprints found for user ubuntu.
 [  158.166765] cloud-init[1149]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 finished at Sun, 19 Jul 2020 05:05:52 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 157.84 seconds
+[227268.277040] sd 2:0:0:0: [sda] tag#0 Medium access timeout failure. Offlining disk!
+[227268.512552] print_req_error: I/O error, dev sda, sector 6539264
+[227268.523649] sd 2:0:0:0: rejecting I/O to offline device
+[227268.532809] print_req_error: I/O error, dev sda, sector 6490112
+[227268.667945] sd 2:0:0:0: rejecting I/O to offline device
+[227268.681167] Buffer I/O error on device sda1, logical block 26569
+[227268.693804] Buffer I/O error on device sda1, logical block 26570
+[227268.781069] Buffer I/O error on device sda1, logical block 26571
+[227268.795800] Buffer I/O error on device sda1, logical block 26572
+[227268.811910] print_req_error: I/O error, dev sda, sector 6484480
+[227268.871870] sd 2:0:0:0: rejecting I/O to offline device
+[227268.883589] print_req_error: I/O error, dev sda, sector 6481920
+[227268.898292] Buffer I/O error on device sda1, logical block 809984
+[227268.962320] Buffer I/O error on device sda1, logical block 809985
+[227268.977580] Buffer I/O error on device sda1, logical block 809986
+[227268.992249] Buffer I/O error on device sda1, logical block 809987
+[227269.043209] Buffer I/O error on device sda1, logical block 809988
+[227269.062405] Buffer I/O error on device sda1, logical block 809989
+[227269.107355] sd 2:0:0:0: rejecting I/O to offline device
+[227269.125335] print_req_error: I/O error, dev sda, sector 6489840
+[227269.137562] print_req_error: I/O error, dev sda, sector 6489400
+[227269.169485] sd 2:0:0:0: rejecting I/O to offline device
+[227269.184456] print_req_error: I/O error, dev sda, sector 6488960
+[227269.198985] print_req_error: I/O error, dev sda, sector 6488520
+[227269.216582] sd 2:0:0:0: rejecting I/O to offline device
+[227269.229053] sd 2:0:0:0: rejecting I/O to offline device
+[227269.247527] sd 2:0:0:0: rejecting I/O to offline device
+[227269.262923] sd 2:0:0:0: rejecting I/O to offline device
+[227269.274583] print_req_error: I/O error, dev sda, sector 6486016
+[227269.295872] sd 2:0:0:0: rejecting I/O to offline device
+[227269.310920] sd 2:0:0:0: rejecting I/O to offline device
+[227269.327469] sd 2:0:0:0: rejecting I/O to offline device
+[227269.343249] sd 2:0:0:0: rejecting I/O to offline device
+[227269.361688] print_req_error: I/O error, dev sda, sector 6535168
+[227269.378114] sd 2:0:0:0: rejecting I/O to offline device
+[227269.419224] sd 2:0:0:0: rejecting I/O to offline device
+[227269.433814] sd 2:0:0:0: rejecting I/O to offline device
+[227269.460136] sd 2:0:0:0: rejecting I/O to offline device
+[227269.479692] sd 2:0:0:0: rejecting I/O to offline device
+[227269.489746] sd 2:0:0:0: rejecting I/O to offline device
+[227269.503717] sd 2:0:0:0: rejecting I/O to offline device
+[227269.518237] sd 2:0:0:0: rejecting I/O to offline device
+[227269.547739] sd 2:0:0:0: rejecting I/O to offline device
+[227269.559235] Aborting journal on device sda1-8.
+[227269.561637] sd 2:0:0:0: rejecting I/O to offline device
+[227269.561679] sd 2:0:0:0: rejecting I/O to offline device
+[227269.561728] sd 2:0:0:0: rejecting I/O to offline device
+[227269.561767] sd 2:0:0:0: rejecting I/O to offline device
+[227269.561834] sd 2:0:0:0: rejecting I/O to offline device
+[227269.561937] sd 2:0:0:0: rejecting I/O to offline device
+[227269.561982] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562020] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562269] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562319] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562391] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562428] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562570] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562621] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562668] sd 2:0:0:0: rejecting I/O to offline device
+[227269.562712] sd 2:0:0:0: rejecting I/O to offline device
+[227269.579832] sd 2:0:0:0: rejecting I/O to offline device
+[227269.786605] sd 2:0:0:0: rejecting I/O to offline device
+[227269.799099] sd 2:0:0:0: rejecting I/O to offline device
+[227269.809760] sd 2:0:0:0: rejecting I/O to offline device
+[227269.819025] sd 2:0:0:0: rejecting I/O to offline device
+[227269.830192] sd 2:0:0:0: rejecting I/O to offline device
+[227269.843041] sd 2:0:0:0: rejecting I/O to offline device
+[227269.859748] sd 2:0:0:0: rejecting I/O to offline device
+[227269.905260] sd 2:0:0:0: rejecting I/O to offline device
+[227269.921311] sd 2:0:0:0: rejecting I/O to offline device
+[227269.939213] sd 2:0:0:0: rejecting I/O to offline device
+[227269.968309] sd 2:0:0:0: rejecting I/O to offline device
+[227269.983237] sd 2:0:0:0: rejecting I/O to offline device
+[227269.997636] sd 2:0:0:0: rejecting I/O to offline device
+[227270.019451] sd 2:0:0:0: rejecting I/O to offline device
+[227270.035758] sd 2:0:0:0: rejecting I/O to offline device
+[227270.048199] sd 2:0:0:0: rejecting I/O to offline device
+[227270.070823] sd 2:0:0:0: rejecting I/O to offline device
+[227270.083108] sd 2:0:0:0: rejecting I/O to offline device
+[227270.097411] sd 2:0:0:0: rejecting I/O to offline device
+[227270.108614] sd 2:0:0:0: rejecting I/O to offline device
+[227270.119672] sd 2:0:0:0: rejecting I/O to offline device
+[227270.131980] sd 2:0:0:0: rejecting I/O to offline device
+[227270.144950] sd 2:0:0:0: rejecting I/O to offline device
+[227270.158120] sd 2:0:0:0: rejecting I/O to offline device
+[227270.168740] sd 2:0:0:0: rejecting I/O to offline device
+[227270.180229] sd 2:0:0:0: rejecting I/O to offline device
+[227270.190477] sd 2:0:0:0: rejecting I/O to offline device
+[227270.208199] sd 2:0:0:0: rejecting I/O to offline device
+[227270.223261] sd 2:0:0:0: rejecting I/O to offline device
+[227270.234244] sd 2:0:0:0: rejecting I/O to offline device
+[227270.247991] sd 2:0:0:0: rejecting I/O to offline device
+[227270.259962] sd 2:0:0:0: rejecting I/O to offline device
+[227270.270799] sd 2:0:0:0: rejecting I/O to offline device
+[227270.280669] sd 2:0:0:0: rejecting I/O to offline device
+[227270.294853] sd 2:0:0:0: rejecting I/O to offline device
+[227270.309162] sd 2:0:0:0: rejecting I/O to offline device
+[227270.322651] sd 2:0:0:0: rejecting I/O to offline device
+[227270.333071] sd 2:0:0:0: rejecting I/O to offline device
+[227270.344453] sd 2:0:0:0: rejecting I/O to offline device
+[227270.362351] sd 2:0:0:0: rejecting I/O to offline device
+[227270.372468] sd 2:0:0:0: rejecting I/O to offline device
+[227270.387966] sd 2:0:0:0: rejecting I/O to offline device
+[227270.402184] sd 2:0:0:0: rejecting I/O to offline device
+[227270.414254] sd 2:0:0:0: rejecting I/O to offline device
+[227270.425217] sd 2:0:0:0: rejecting I/O to offline device
+[227270.436778] sd 2:0:0:0: rejecting I/O to offline device
+[227270.453960] sd 2:0:0:0: rejecting I/O to offline device
+[227270.468098] sd 2:0:0:0: rejecting I/O to offline device
+[227270.483281] sd 2:0:0:0: rejecting I/O to offline device
+[227270.502538] sd 2:0:0:0: rejecting I/O to offline device
+[227270.518119] sd 2:0:0:0: rejecting I/O to offline device
+[227270.532358] sd 2:0:0:0: rejecting I/O to offline device
+[227270.543155] sd 2:0:0:0: rejecting I/O to offline device
+[227270.553796] sd 2:0:0:0: rejecting I/O to offline device
+[227270.564245] sd 2:0:0:0: rejecting I/O to offline device
+[227270.575799] sd 2:0:0:0: rejecting I/O to offline device
+[227270.587521] sd 2:0:0:0: rejecting I/O to offline device
+[227270.597619] sd 2:0:0:0: rejecting I/O to offline device
+[227270.611359] sd 2:0:0:0: rejecting I/O to offline device
+[227270.623249] sd 2:0:0:0: rejecting I/O to offline device
+[227270.636709] sd 2:0:0:0: rejecting I/O to offline device
+[227270.650479] sd 2:0:0:0: rejecting I/O to offline device
+[227270.670104] sd 2:0:0:0: rejecting I/O to offline device
+[227270.683884] sd 2:0:0:0: rejecting I/O to offline device
+[227270.694781] sd 2:0:0:0: rejecting I/O to offline device
+[227270.708607] sd 2:0:0:0: rejecting I/O to offline device
+[227270.719237] sd 2:0:0:0: rejecting I/O to offline device
+[227270.732817] sd 2:0:0:0: rejecting I/O to offline device
+[227270.746026] sd 2:0:0:0: rejecting I/O to offline device
+[227270.761436] sd 2:0:0:0: rejecting I/O to offline device
+[227270.772780] sd 2:0:0:0: rejecting I/O to offline device
+[227270.786870] sd 2:0:0:0: rejecting I/O to offline device
+[227270.797819] sd 2:0:0:0: rejecting I/O to offline device
+[227270.820425] sd 2:0:0:0: rejecting I/O to offline device
+[227270.831172] sd 2:0:0:0: rejecting I/O to offline device
+[227270.846078] sd 2:0:0:0: rejecting I/O to offline device
+[227270.864606] sd 2:0:0:0: rejecting I/O to offline device
+[227270.878061] sd 2:0:0:0: rejecting I/O to offline device
+[227270.904282] sd 2:0:0:0: rejecting I/O to offline device
+[227270.915002] sd 2:0:0:0: rejecting I/O to offline device
+[227270.926098] sd 2:0:0:0: rejecting I/O to offline device
+[227270.953514] sd 2:0:0:0: rejecting I/O to offline device
+[227270.969016] JBD2: Error -5 detected when updating journal superblock for sda1-8.
+[227270.990641] sd 2:0:0:0: rejecting I/O to offline device
+[227271.016162] EXT4-fs (sda1): previous I/O error to superblock detected
+[227271.041044] EXT4-fs error (device sda1): ext4_journal_check_start:61: Detected aborted journal
+[227271.041292] sd 2:0:0:0: rejecting I/O to offline device
+[227271.069519] EXT4-fs (sda1): Remounting filesystem read-only
+[227271.082242] EXT4-fs error (device sda1): ext4_journal_check_start:61: Detected aborted journal
+[227271.119804] EXT4-fs (sda1): ext4_writepages: jbd2_start: 3069 pages, ino 6793; err -30
+[227271.157682] EXT4-fs (sda1): previous I/O error to superblock detected
+[227271.178469] sd 2:0:0:0: rejecting I/O to offline device
+[227285.668273] sd 2:0:0:0: rejecting I/O to offline device
+[227285.697240] sd 2:0:0:0: rejecting I/O to offline device
+[227285.729423] sd 2:0:0:0: rejecting I/O to offline device
+[227285.754546] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #10600: comm unattended-upgr: reading directory lblock 0
+[227285.807649] EXT4-fs (sda1): previous I/O error to superblock detected
+[227285.867411] sd 2:0:0:0: rejecting I/O to offline device
+[227285.882008] sd 2:0:0:0: rejecting I/O to offline device
+[227285.903580] sd 2:0:0:0: rejecting I/O to offline device
+[227285.972815] sd 2:0:0:0: rejecting I/O to offline device
+[227285.995637] sd 2:0:0:0: rejecting I/O to offline device
+[227286.017529] sd 2:0:0:0: rejecting I/O to offline device
+[227286.029418] sd 2:0:0:0: rejecting I/O to offline device
+[257348.667798] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[257348.740686] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[257348.761514] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[257348.785264] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[257348.807399] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[257348.831086] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[257348.850434] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[257348.870359] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[257348.890336] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[257348.910172] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[259272.989684] systemd-journald[393]: Failed to write entry (25 items, 694 bytes), ignoring: Read-only file system
+[259273.013729] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[259273.033761] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[259273.051659] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[259273.071443] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[259273.101300] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[259273.121072] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[259273.141070] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[259273.159610] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[259273.179340] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260327.178514] systemd-journald[393]: Failed to write entry (26 items, 693 bytes), ignoring: Read-only file system
+[260327.205847] sd 2:0:0:0: rejecting I/O to offline device
+[260327.222246] sd 2:0:0:0: rejecting I/O to offline device
+[260327.241057] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[260327.272241] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[260327.314786] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260327.337157] systemd-journald[393]: Failed to write entry (27 items, 697 bytes), ignoring: Read-only file system
+[260327.357597] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[260327.377278] systemd-journald[393]: Failed to write entry (24 items, 598 bytes), ignoring: Read-only file system
+[260327.406466] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260327.430523] systemd-journald[393]: Failed to write entry (28 items, 706 bytes), ignoring: Read-only file system
+[260327.453686] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260707.021136] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[260707.045781] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260707.067849] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260707.089988] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260707.112086] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260707.133143] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260707.155603] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260707.177359] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[260707.199172] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260707.223603] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260946.933243] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[260946.957190] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260946.976462] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[260946.999059] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260947.021264] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260947.044690] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260947.064367] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260947.087063] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[260947.108317] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[260947.132611] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[264546.848171] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[264546.872906] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[264546.893390] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[264546.927108] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[264546.949280] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[264546.976933] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[264546.998564] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[264547.022629] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[264547.044909] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[264547.063967] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[268148.818896] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[268148.841082] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[268148.861168] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[268148.881159] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[268148.900698] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[268148.920545] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[268148.940784] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[268148.960642] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[268148.979340] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[268148.998927] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[271748.123662] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[271748.145654] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[271748.165205] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[271748.184350] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[271748.204603] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[271748.225595] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[271748.246627] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[271748.265995] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[271748.286018] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[271748.306756] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[275345.560722] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[275345.587751] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[275345.610690] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[275345.637289] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[275345.657948] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[275345.681100] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[275345.699487] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[275345.721024] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[275345.741521] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[275345.761385] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[278944.039934] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[278944.066963] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[278944.088004] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[278944.109370] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[278944.134673] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[278944.158616] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[278944.182251] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[278944.204445] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[278944.227617] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[278944.247783] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[280134.111599] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
+[280134.563181] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
+[280134.682277] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[280134.801687] systemd-journald[393]: Failed to write entry (26 items, 677 bytes), ignoring: Read-only file system
+[280134.889607] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[280134.963279] systemd-journald[393]: Failed to write entry (27 items, 672 bytes), ignoring: Read-only file system
+[280135.065000] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[280135.339581] systemd-journald[393]: Failed to write entry (24 items, 575 bytes), ignoring: Read-only file system
+[280135.399974] systemd-journald[393]: Failed to write entry (13 items, 377 bytes), ignoring: Read-only file system
+[280135.462716] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[280144.942168] systemd-journald[393]: Failed to write entry (9 items, 419 bytes), ignoring: Read-only file system
+[280145.037674] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[280145.140819] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[280145.239564] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[280145.344732] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[280145.379374] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[280145.520483] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[280145.631624] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[280145.681333] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[280145.814856] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[281045.648608] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
+[281045.730710] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[281045.849371] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[281046.068886] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
+[281046.354536] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[281047.055524] systemd-journald[393]: Failed to write entry (26 items, 677 bytes), ignoring: Read-only file system
+[281047.264172] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[281047.352334] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
+[281047.723587] systemd-journald[393]: Failed to write entry (13 items, 377 bytes), ignoring: Read-only file system
+[281047.838259] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[281050.845180] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[281050.903860] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[281050.960647] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[281051.054289] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[281051.096186] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[281051.131794] systemd-journald[393]: Failed to write entry (19 items, 624 bytes), ignoring: Read-only file system
+[281051.177984] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[281051.210921] systemd-journald[393]: Failed to write entry (27 items, 680 bytes), ignoring: Read-only file system
+[281051.239041] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[281051.288087] systemd-journald[393]: Failed to write entry (24 items, 575 bytes), ignoring: Read-only file system
+[282596.003022] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
+[282596.456213] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[282596.514479] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[282596.561889] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
+[282596.595611] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[282596.647301] systemd-journald[393]: Failed to write entry (26 items, 677 bytes), ignoring: Read-only file system
+[282596.723728] systemd-journald[393]: Failed to write entry (13 items, 377 bytes), ignoring: Read-only file system
+[282597.542022] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[282597.579699] systemd-journald[393]: Failed to write entry (27 items, 672 bytes), ignoring: Read-only file system
+[282597.616077] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[282606.022945] systemd-journald[393]: Failed to write entry (9 items, 419 bytes), ignoring: Read-only file system
+[282606.047833] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[282606.269676] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[282606.290708] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[282606.357134] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[282606.378186] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[282606.398624] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[282606.418907] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[282606.438492] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[282606.463024] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283237.441074] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[283237.462049] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283237.484863] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283237.507602] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[283237.598143] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283237.620465] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283237.641247] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283237.663591] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283237.684534] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283237.710051] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283926.188907] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
+[283926.360691] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283926.672050] systemd-journald[393]: Failed to write entry (26 items, 694 bytes), ignoring: Read-only file system
+[283926.881996] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283926.946115] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283927.019138] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[283927.119429] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283927.263616] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283927.312240] systemd-journald[393]: Failed to write entry (19 items, 640 bytes), ignoring: Read-only file system
+[283927.782107] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283936.614313] systemd-journald[393]: Failed to write entry (9 items, 419 bytes), ignoring: Read-only file system
+[283936.745331] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283936.872132] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283936.924094] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283937.018650] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283937.054118] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283937.092801] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[283937.122602] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[283937.154390] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[283937.190317] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284757.448545] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
+[284757.929512] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
+[284758.173013] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284759.241077] systemd-journald[393]: Failed to write entry (26 items, 677 bytes), ignoring: Read-only file system
+[284759.559040] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284760.383644] systemd-journald[393]: Failed to write entry (27 items, 672 bytes), ignoring: Read-only file system
+[284760.910380] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284761.303248] systemd-journald[393]: Failed to write entry (13 items, 377 bytes), ignoring: Read-only file system
+[284761.336463] systemd-journald[393]: Failed to write entry (24 items, 575 bytes), ignoring: Read-only file system
+[284761.493710] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284762.633384] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284762.906855] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284763.002707] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284763.045542] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284763.087731] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284763.133632] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284763.311449] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284763.547828] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284763.626583] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284763.678437] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284997.690451] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[284997.711931] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284997.734594] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[284997.755258] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284997.775770] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284997.795282] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284997.815693] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284997.841174] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[284997.863643] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[284997.884313] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[288596.095967] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[288596.131936] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[288596.160670] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[288596.188851] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[288596.209837] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[288596.237662] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[288596.263779] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[288596.288123] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[288596.310411] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[288596.331762] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[289411.510843] sd 2:0:0:0: rejecting I/O to offline device
+[289411.542097] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[289411.585187] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
+[289411.593299] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
+[289411.603723] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289411.624432] EXT4-fs (sda1): previous I/O error to superblock detected
+[289411.653416] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
+[289411.682434] sd 2:0:0:0: rejecting I/O to offline device
+[289411.713671] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[289411.797168] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[289411.833147] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289411.862755] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[289411.890100] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[289411.916663] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289600.675080] sd 2:0:0:0: rejecting I/O to offline device
+[289600.687868] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
+[289600.691277] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[289600.714408] EXT4-fs (sda1): previous I/O error to superblock detected
+[289600.752850] sd 2:0:0:0: rejecting I/O to offline device
+[289600.767634] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
+[289600.790767] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
+[289600.818793] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[289600.845638] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289600.869362] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[289600.897171] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289600.942398] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[289600.966697] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289600.996880] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[289733.283612] sd 2:0:0:0: rejecting I/O to offline device
+[289733.302023] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
+[289733.305480] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[289733.341484] EXT4-fs (sda1): previous I/O error to superblock detected
+[289733.341570] sd 2:0:0:0: rejecting I/O to offline device
+[289733.450488] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
+[289733.491604] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
+[289733.520924] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[289733.553182] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289733.577404] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[289733.623770] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289733.657406] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[289733.688121] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[289733.709814] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[290348.449964] sd 2:0:0:0: rejecting I/O to offline device
+[290348.466890] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
+[290348.475656] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[290348.504291] EXT4-fs (sda1): previous I/O error to superblock detected
+[290348.542364] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
+[290348.543255] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
+[290348.591181] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[290348.635081] sd 2:0:0:0: rejecting I/O to offline device
+[290348.756964] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[290348.789511] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[290348.853627] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[290348.887295] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[290348.938733] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[290348.977504] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[290616.921533] sd 2:0:0:0: rejecting I/O to offline device
+[290616.936177] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
+[290616.940384] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[290616.968138] EXT4-fs (sda1): previous I/O error to superblock detected
+[290616.968224] sd 2:0:0:0: rejecting I/O to offline device
+[290617.034921] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
+[290617.076815] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
+[290617.103049] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[290617.138940] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[290617.166554] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[290617.194790] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[290617.217684] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[290617.240318] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[290617.263121] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291112.664111] sd 2:0:0:0: rejecting I/O to offline device
+[291112.679928] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
+[291112.680669] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[291112.704697] EXT4-fs (sda1): previous I/O error to superblock detected
+[291112.704869] sd 2:0:0:0: rejecting I/O to offline device
+[291112.742019] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
+[291112.804642] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
+[291112.834455] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[291112.866028] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291112.893948] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[291112.929599] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[291112.954896] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291112.983878] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[291113.012396] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291272.197191] sd 2:0:0:0: rejecting I/O to offline device
+[291272.213651] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
+[291272.216286] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[291272.235174] EXT4-fs (sda1): previous I/O error to superblock detected
+[291272.270479] sd 2:0:0:0: rejecting I/O to offline device
+[291272.286572] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
+[291272.310395] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
+[291272.340155] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[291272.384890] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291272.421292] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[291272.449647] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[291272.474501] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291272.502094] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[291272.528626] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291607.954952] sd 2:0:0:0: rejecting I/O to offline device
+[291607.994394] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[291608.020617] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
+[291608.048652] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291608.080694] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
+[291608.084186] EXT4-fs (sda1): previous I/O error to superblock detected
+[291608.128586] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
+[291608.171113] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[291608.203268] sd 2:0:0:0: rejecting I/O to offline device
+[291608.208369] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
+[291608.254704] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[291608.282378] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[291608.302856] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[291608.334734] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[292194.070879] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
+[292194.092240] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[292194.113835] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
+[292194.133815] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[292194.152004] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[292194.171498] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[292194.192984] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[292194.213344] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+[292194.231782] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
+[292194.251025] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
