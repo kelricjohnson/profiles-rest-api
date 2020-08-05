@@ -1,5 +1,5 @@
-[    0.000000] Linux version 4.15.0-111-generic (buildd@lcy01-amd64-011) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #112-Ubuntu SMP Thu Jul 9 20:32:34 UTC 2020 (Ubuntu 4.15.0-111.112-generic 4.15.18)
-[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-111-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
+[    0.000000] Linux version 4.15.0-112-generic (buildd@lcy01-amd64-027) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #113-Ubuntu SMP Thu Jul 9 23:41:39 UTC 2020 (Ubuntu 4.15.0-112.113-generic 4.15.18)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-112-generic root=UUID=9887b0d8-55e1-49d6-b28b-ed8492c1f834 ro console=tty1 console=ttyS0
 [    0.000000] KERNEL supported cpus:
 [    0.000000]   Intel GenuineIntel
 [    0.000000]   AMD AuthenticAMD
@@ -29,7 +29,7 @@
 [    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
 [    0.000000] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
 [    0.000000] Scanning 1 areas for low memory corruption
-[    0.000000] RAMDISK: [mem 0x35a67000-0x36d2afff]
+[    0.000000] RAMDISK: [mem 0x3595f000-0x36ca6fff]
 [    0.000000] ACPI: Early table checksum verification disabled
 [    0.000000] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
 [    0.000000] ACPI: XSDT 0x000000003FFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
@@ -44,7 +44,7 @@
 [    0.000000] NODE_DATA(0) allocated [mem 0x3ffc5000-0x3ffeffff]
 [    0.000000] kvm-clock: cpu 0, msr 0:3ff44001, primary cpu clock
 [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
-[    0.000000] kvm-clock: using sched offset of 30045674807 cycles
+[    0.000000] kvm-clock: using sched offset of 28463420447 cycles
 [    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
 [    0.000000] Zone ranges:
 [    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
@@ -76,8 +76,8 @@
 [    0.000000] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
 [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 257913
 [    0.000000] Policy zone: DMA32
-[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-111-generic root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0
-[    0.000000] Memory: 983036K/1048120K available (12300K kernel code, 2481K rwdata, 4272K rodata, 2436K init, 2720K bss, 65084K reserved, 0K cma-reserved)
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-112-generic root=UUID=9887b0d8-55e1-49d6-b28b-ed8492c1f834 ro console=tty1 console=ttyS0
+[    0.000000] Memory: 982508K/1048120K available (12300K kernel code, 2481K rwdata, 4272K rodata, 2436K init, 2720K bss, 65612K reserved, 0K cma-reserved)
 [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
 [    0.000000] Kernel/User page tables isolation: enabled
 [    0.000000] ftrace: allocating 39378 entries in 154 pages
@@ -92,384 +92,383 @@
 [    0.004000] ACPI: Core revision 20170831
 [    0.004000] ACPI: 2 ACPI AML tables successfully acquired and loaded
 [    0.004000] APIC: Switch to symmetric I/O mode setup
-[    0.013735] x2apic enabled
-[    0.016068] Switched APIC routing to physical x2apic.
-[    0.024000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
-[    0.024039] tsc: Detected 2494.332 MHz processor
-[    0.028085] Calibrating delay loop (skipped) preset value.. 4988.66 BogoMIPS (lpj=9977328)
-[    0.032055] pid_max: default: 32768 minimum: 301
-[    0.036643] Security Framework initialized
-[    0.040041] Yama: becoming mindful.
-[    0.044577] AppArmor: AppArmor initialized
-[    0.056074] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
-[    0.060832] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
-[    0.064180] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
-[    0.068108] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
-[    0.077450] Last level iTLB entries: 4KB 512, 2MB 8, 4MB 8
-[    0.080044] Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32, 1GB 0
-[    0.084041] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
-[    0.088042] Spectre V2 : Mitigation: Full generic retpoline
-[    0.092044] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
-[    0.096038] Speculative Store Bypass: Vulnerable
-[    0.100621] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
-[    0.112915] Freeing SMP alternatives memory: 36K
-[    0.260000] smpboot: CPU0: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz (family: 0x6, model: 0x2a, stepping: 0x7)
-[    0.261142] Performance Events: unsupported p6 CPU model 42 no PMU driver, software events only.
-[    0.264630] Hierarchical SRCU implementation.
-[    0.277427] NMI watchdog: Perf event create on CPU 0 failed with -2
-[    0.280039] NMI watchdog: Perf NMI watchdog permanently disabled
-[    0.284758] smp: Bringing up secondary CPUs ...
-[    0.289402] x86: Booting SMP configuration:
-[    0.292040] .... node  #0, CPUs:      #1
+[    0.011063] x2apic enabled
+[    0.012067] Switched APIC routing to physical x2apic.
+[    0.020000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.020040] tsc: Detected 2494.344 MHz processor
+[    0.024083] Calibrating delay loop (skipped) preset value.. 4988.68 BogoMIPS (lpj=9977376)
+[    0.028043] pid_max: default: 32768 minimum: 301
+[    0.032489] Security Framework initialized
+[    0.036033] Yama: becoming mindful.
+[    0.040442] AppArmor: AppArmor initialized
+[    0.052522] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.056884] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+[    0.060172] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.064093] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[    0.076501] Last level iTLB entries: 4KB 512, 2MB 8, 4MB 8
+[    0.080040] Last level dTLB entries: 4KB 512, 2MB 32, 4MB 32, 1GB 0
+[    0.084040] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.088044] Spectre V2 : Mitigation: Full generic retpoline
+[    0.092033] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.096023] Speculative Store Bypass: Vulnerable
+[    0.100399] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+[    0.110609] Freeing SMP alternatives memory: 36K
+[    0.242771] smpboot: CPU0: Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz (family: 0x6, model: 0x2a, stepping: 0x7)
+[    0.248406] Performance Events: unsupported p6 CPU model 42 no PMU driver, software events only.
+[    0.252527] Hierarchical SRCU implementation.
+[    0.264000] NMI watchdog: Perf event create on CPU 0 failed with -2
+[    0.264036] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.268801] smp: Bringing up secondary CPUs ...
+[    0.273331] x86: Booting SMP configuration:
+[    0.276121] .... node  #0, CPUs:      #1
 [    0.004000] kvm-clock: cpu 1, msr 0:3ff44041, secondary cpu clock
-[    0.328361] smp: Brought up 1 node, 2 CPUs
-[    0.332161] smpboot: Max logical packages: 1
-[    0.336242] smpboot: Total of 2 processors activated (9977.32 BogoMIPS)
-[    0.344041] devtmpfs: initialized
-[    0.348993] x86/mm: Memory block size: 128MB
-[    0.358177] evm: security.selinux
-[    0.360035] evm: security.SMACK64
-[    0.364037] evm: security.SMACK64EXEC
-[    0.368037] evm: security.SMACK64TRANSMUTE
-[    0.372036] evm: security.SMACK64MMAP
-[    0.376044] evm: security.apparmor
-[    0.380036] evm: security.ima
-[    0.384217] evm: security.capability
-[    0.396345] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
-[    0.400121] futex hash table entries: 512 (order: 3, 32768 bytes)
-[    0.416073] pinctrl core: initialized pinctrl subsystem
-[    0.425723] RTC time:  5:03:13, date: 07/19/20
-[    0.437473] NET: Registered protocol family 16
-[    0.441966] audit: initializing netlink subsys (disabled)
-[    0.444453] audit: type=2000 audit(1595135023.358:1): state=initialized audit_enabled=0 res=1
-[    0.572083] cpuidle: using governor ladder
-[    0.576116] cpuidle: using governor menu
-[    0.580921] ACPI: bus type PCI registered
-[    0.584149] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
-[    0.600259] PCI: Using configuration type 1 for base access
-[    0.648849] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
-[    0.660731] ACPI: Added _OSI(Module Device)
-[    0.664047] ACPI: Added _OSI(Processor Device)
-[    0.668042] ACPI: Added _OSI(3.0 _SCP Extensions)
-[    0.672041] ACPI: Added _OSI(Processor Aggregator Device)
-[    0.676058] ACPI: Added _OSI(Linux-Dell-Video)
-[    0.680054] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
-[    0.684054] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
-[    0.693395] ACPI: Executed 1 blocks of module-level executable AML code
-[    0.820627] ACPI: Interpreter enabled
-[    0.824679] ACPI: (supports S0 S5)
-[    0.828041] ACPI: Using IOAPIC for interrupt routing
-[    0.846365] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
-[    0.861461] ACPI: Enabled 2 GPEs in block 00 to 07
-[    1.101651] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
-[    1.104100] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
-[    1.125279] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
-[    1.128585] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
-[    1.148782] PCI host bridge to bus 0000:00
-[    1.152053] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
-[    1.156054] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
-[    1.160066] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
-[    1.164070] pci_bus 0000:00: root bus resource [mem 0x40000000-0xfdffffff window]
-[    1.168180] pci_bus 0000:00: root bus resource [bus 00-ff]
-[    1.212346] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
-[    1.216052] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
-[    1.220050] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
-[    1.224048] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
-[    1.473822] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
-[    1.520261] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
-[    1.674381] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
-[    1.716074] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
-[    1.740385] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
-[    1.760461] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
-[    1.807365] SCSI subsystem initialized
-[    1.825223] pci 0000:00:02.0: vgaarb: setting as boot VGA device
-[    1.840032] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
-[    1.880076] pci 0000:00:02.0: vgaarb: bridge control possible
-[    1.916042] vgaarb: loaded
-[    2.016753] ACPI: bus type USB registered
-[    2.020367] usbcore: registered new interface driver usbfs
-[    2.024189] usbcore: registered new interface driver hub
-[    2.028373] usbcore: registered new device driver usb
-[    2.052079] EDAC MC: Ver: 3.0.0
-[    2.061618] PCI: Using ACPI for IRQ routing
-[    2.076205] NetLabel: Initializing
-[    2.080039] NetLabel:  domain hash size = 128
-[    2.084023] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
-[    2.088230] NetLabel:  unlabeled traffic allowed by default
-[    2.102582] clocksource: Switched to clocksource kvm-clock
-[    2.643867] VFS: Disk quotas dquot_6.6.0
-[    2.660578] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
-[    2.684057] AppArmor: AppArmor Filesystem Enabled
-[    2.702320] pnp: PnP ACPI init
-[    2.734490] pnp: PnP ACPI: found 3 devices
-[    2.808507] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
-[    2.831320] NET: Registered protocol family 2
-[    2.853435] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
-[    2.872862] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
-[    2.889873] TCP: Hash tables configured (established 8192 bind 8192)
-[    2.905310] UDP hash table entries: 512 (order: 2, 16384 bytes)
-[    2.919994] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
-[    2.936141] NET: Registered protocol family 1
-[    2.948182] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
-[    2.963983] pci 0000:00:01.0: Activating ISA DMA hang workarounds
-[    2.980120] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
-[    3.001930] Unpacking initramfs...
-[    8.156667] Freeing initrd memory: 19216K
-[    8.177909] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x23f44f92df3, max_idle_ns: 440795329494 ns
-[    8.214230] platform rtc_cmos: registered platform RTC device (no PNP device found)
-[    8.239499] Scanning for low memory corruption every 60 seconds
-[    8.265994] Initialise system trusted keyrings
-[    8.279869] Key type blacklist registered
-[    8.301130] workingset: timestamp_bits=36 max_order=18 bucket_order=0
-[    8.358327] zbud: loaded
-[    8.377459] squashfs: version 4.0 (2009/01/31) Phillip Lougher
-[    8.397383] fuse init (API version 7.26)
-[    8.440058] Key type asymmetric registered
-[    8.453479] Asymmetric key parser 'x509' registered
-[    8.473868] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
-[    8.503719] io scheduler noop registered
-[    8.520619] io scheduler deadline registered
-[    8.532713] io scheduler cfq registered (default)
-[    8.550779] ACPI: AC Adapter [AC] (on-line)
-[    8.566267] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
-[    8.591556] ACPI: Power Button [PWRF]
-[    8.606228] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
-[    8.625081] ACPI: Sleep Button [SLPF]
-[    8.646399] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
-[    8.664173] ACPI: Battery Slot [BAT0] (battery present)
-[    8.708155] 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
-[    8.777136] Linux agpgart interface v0.103
-[    8.814961] loop: module loaded
-[    8.839928] scsi host0: ata_piix
-[    8.851874] scsi host1: ata_piix
-[    8.863061] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
-[    8.881490] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
-[    8.900424] libphy: Fixed MDIO Bus: probed
-[    8.914898] tun: Universal TUN/TAP device driver, 1.6
-[    8.929242] PPP generic driver version 2.4.2
-[    8.941822] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
-[    8.958168] ehci-pci: EHCI PCI platform driver
-[    8.971029] ehci-platform: EHCI generic platform driver
-[    8.985784] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
-[    9.007122] ohci-pci: OHCI PCI platform driver
-[    9.023434] ohci-platform: OHCI generic platform driver
-[    9.039263] uhci_hcd: USB Universal Host Controller Interface driver
-[    9.059216] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
-[    9.091095] serio: i8042 KBD port at 0x60,0x64 irq 1
-[    9.106937] serio: i8042 AUX port at 0x60,0x64 irq 12
-[    9.143288] mousedev: PS/2 mouse device common for all mice
-[    9.167744] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
-[    9.169342] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
-[    9.219620] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
-[    9.241474] i2c /dev entries driver
-[    9.253161] device-mapper: uevent: version 1.0.3
-[    9.294318] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
-[    9.329258] ledtrig-cpu: registered to indicate activity on CPUs
-[    9.373102] NET: Registered protocol family 10
-[    9.481688] Segment Routing with IPv6
-[    9.493332] NET: Registered protocol family 17
-[    9.506660] Key type dns_resolver registered
-[    9.527517] mce: Using 0 MCE banks
-[    9.541717] RAS: Correctable Errors collector initialized.
-[    9.559213] sched_clock: Marking stable (9558896925, 0)->(14893288805, -5334391880)
-[    9.592587] registered taskstats version 1
-[    9.605941] Loading compiled-in X.509 certificates
-[    9.663979] Loaded X.509 cert 'Build time autogenerated kernel key: e7f49a8350fc58df7a2fc42bf39ecd356db1ebb3'
-[    9.698732] zswap: loaded using pool lzo/zbud
-[    9.774396] Key type big_key registered
-[    9.786129] Key type trusted registered
-[    9.824831] Key type encrypted registered
-[    9.849309] AppArmor: AppArmor sha1 policy hashing enabled
-[    9.865413] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
-[    9.891369] ima: Allocated hash algorithm: sha1
-[    9.904817] evm: HMAC attrs: 0x1
-[    9.919544]   Magic number: 12:474:62
-[    9.930820] rtc_cmos rtc_cmos: setting system clock to 2020-07-19 05:03:24 UTC (1595135004)
-[    9.953325] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
-[    9.969576] EDD information not available.
-[   10.053393] Freeing unused kernel image memory: 2436K
-[   10.080675] Write protecting the kernel read-only data: 20480k
-[   10.104522] Freeing unused kernel image memory: 2008K
-[   10.122133] Freeing unused kernel image memory: 1872K
-[   10.376474] x86/mm: Checked W+X mappings: passed, no W+X pages found.
-[   10.401937] x86/mm: Checking user space page tables
-[   10.665080] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    0.300369] smp: Brought up 1 node, 2 CPUs
+[    0.304060] smpboot: Max logical packages: 1
+[    0.308044] smpboot: Total of 2 processors activated (9977.37 BogoMIPS)
+[    0.316369] devtmpfs: initialized
+[    0.324271] x86/mm: Memory block size: 128MB
+[    0.335206] evm: security.selinux
+[    0.336033] evm: security.SMACK64
+[    0.340032] evm: security.SMACK64EXEC
+[    0.344032] evm: security.SMACK64TRANSMUTE
+[    0.348019] evm: security.SMACK64MMAP
+[    0.352018] evm: security.apparmor
+[    0.356029] evm: security.ima
+[    0.360029] evm: security.capability
+[    0.368042] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.372097] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.380000] pinctrl core: initialized pinctrl subsystem
+[    0.385768] RTC time: 14:57:32, date: 08/05/20
+[    0.392864] NET: Registered protocol family 16
+[    0.400115] audit: initializing netlink subsys (disabled)
+[    0.404315] audit: type=2000 audit(1596639480.540:1): state=initialized audit_enabled=0 res=1
+[    0.428079] cpuidle: using governor ladder
+[    0.432191] cpuidle: using governor menu
+[    0.436897] ACPI: bus type PCI registered
+[    0.440037] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.446329] PCI: Using configuration type 1 for base access
+[    0.488694] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.501099] ACPI: Added _OSI(Module Device)
+[    0.504038] ACPI: Added _OSI(Processor Device)
+[    0.508037] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.512037] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.516040] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.520042] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.524051] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.533182] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.646665] ACPI: Interpreter enabled
+[    0.648219] ACPI: (supports S0 S5)
+[    0.656073] ACPI: Using IOAPIC for interrupt routing
+[    0.668290] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.675787] ACPI: Enabled 2 GPEs in block 00 to 07
+[    0.841167] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.844097] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[    0.865212] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    0.868317] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.881105] PCI host bridge to bus 0000:00
+[    0.884057] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.888140] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.892048] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.896057] pci_bus 0000:00: root bus resource [mem 0x40000000-0xfdffffff window]
+[    0.900063] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.934020] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.936041] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.940055] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.944045] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    1.109517] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+[    1.112376] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+[    1.208582] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[    1.221911] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+[    1.230319] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+[    1.238302] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+[    1.247525] SCSI subsystem initialized
+[    1.252248] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    1.256000] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    1.256058] pci 0000:00:02.0: vgaarb: bridge control possible
+[    1.260037] vgaarb: loaded
+[    1.264556] ACPI: bus type USB registered
+[    1.268301] usbcore: registered new interface driver usbfs
+[    1.272181] usbcore: registered new interface driver hub
+[    1.276244] usbcore: registered new device driver usb
+[    1.281107] EDAC MC: Ver: 3.0.0
+[    1.292530] PCI: Using ACPI for IRQ routing
+[    1.304439] NetLabel: Initializing
+[    1.308033] NetLabel:  domain hash size = 128
+[    1.312033] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    1.316237] NetLabel:  unlabeled traffic allowed by default
+[    1.325414] clocksource: Switched to clocksource kvm-clock
+[    1.661515] VFS: Disk quotas dquot_6.6.0
+[    1.680523] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.704930] AppArmor: AppArmor Filesystem Enabled
+[    1.720303] pnp: PnP ACPI init
+[    1.751328] pnp: PnP ACPI: found 3 devices
+[    1.827805] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    1.856560] NET: Registered protocol family 2
+[    1.872926] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[    1.900959] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+[    1.926938] TCP: Hash tables configured (established 8192 bind 8192)
+[    1.951810] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    1.979526] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    2.000816] NET: Registered protocol family 1
+[    2.012392] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    2.036468] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    2.054995] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    2.079860] Unpacking initramfs...
+[    7.358959] Freeing initrd memory: 19744K
+[    7.382132] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x23f45a9eb2b, max_idle_ns: 440795260503 ns
+[    7.412340] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    7.434839] Scanning for low memory corruption every 60 seconds
+[    7.459250] Initialise system trusted keyrings
+[    7.474683] Key type blacklist registered
+[    7.487724] workingset: timestamp_bits=36 max_order=18 bucket_order=0
+[    7.531246] zbud: loaded
+[    7.549370] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    7.566905] fuse init (API version 7.26)
+[    7.617547] Key type asymmetric registered
+[    7.630009] Asymmetric key parser 'x509' registered
+[    7.647953] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    7.674683] io scheduler noop registered
+[    7.688242] io scheduler deadline registered
+[    7.709798] io scheduler cfq registered (default)
+[    7.732456] ACPI: AC Adapter [AC] (on-line)
+[    7.747389] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    7.769030] ACPI: Power Button [PWRF]
+[    7.781753] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    7.805106] ACPI: Sleep Button [SLPF]
+[    7.820684] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    7.850660] ACPI: Battery Slot [BAT0] (battery present)
+[    7.898737] 00:02: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    7.969829] Linux agpgart interface v0.103
+[    8.035883] loop: module loaded
+[    8.054582] scsi host0: ata_piix
+[    8.077322] scsi host1: ata_piix
+[    8.089682] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[    8.110501] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[    8.149631] libphy: Fixed MDIO Bus: probed
+[    8.165068] tun: Universal TUN/TAP device driver, 1.6
+[    8.189962] PPP generic driver version 2.4.2
+[    8.229397] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    8.251232] ehci-pci: EHCI PCI platform driver
+[    8.265670] ehci-platform: EHCI generic platform driver
+[    8.280456] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    8.304573] ohci-pci: OHCI PCI platform driver
+[    8.326624] ohci-platform: OHCI generic platform driver
+[    8.348242] uhci_hcd: USB Universal Host Controller Interface driver
+[    8.371348] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[    8.412371] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    8.426954] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    8.442723] mousedev: PS/2 mouse device common for all mice
+[    8.466901] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    8.491652] rtc_cmos rtc_cmos: rtc core: registered rtc_cmos as rtc0
+[    8.492833] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[    8.536894] i2c /dev entries driver
+[    8.548304] device-mapper: uevent: version 1.0.3
+[    8.561890] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+[    8.589113] ledtrig-cpu: registered to indicate activity on CPUs
+[    8.614960] NET: Registered protocol family 10
+[    8.694794] Segment Routing with IPv6
+[    8.707306] NET: Registered protocol family 17
+[    8.722356] Key type dns_resolver registered
+[    8.749223] mce: Using 0 MCE banks
+[    8.760403] RAS: Correctable Errors collector initialized.
+[    8.776926] sched_clock: Marking stable (8776711730, 0)->(12892004343, -4115292613)
+[    8.810388] registered taskstats version 1
+[    8.843623] Loading compiled-in X.509 certificates
+[    8.907555] Loaded X.509 cert 'Build time autogenerated kernel key: 1d4b83cbc5f7a3cd7e4471a5cf69d65d9314bdf5'
+[    8.960707] zswap: loaded using pool lzo/zbud
+[    9.055220] Key type big_key registered
+[    9.067788] Key type trusted registered
+[    9.105986] Key type encrypted registered
+[    9.119379] AppArmor: AppArmor sha1 policy hashing enabled
+[    9.138013] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+[    9.158132] ima: Allocated hash algorithm: sha1
+[    9.173269] evm: HMAC attrs: 0x1
+[    9.186421]   Magic number: 0:315:990
+[    9.199783] rtc_cmos rtc_cmos: setting system clock to 2020-08-05 14:57:41 UTC (1596639461)
+[    9.232810] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    9.248039] EDD information not available.
+[    9.353572] Freeing unused kernel image memory: 2436K
+[    9.388797] Write protecting the kernel read-only data: 20480k
+[    9.417287] Freeing unused kernel image memory: 2008K
+[    9.441471] Freeing unused kernel image memory: 1872K
+[    9.727741] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    9.750423] x86/mm: Checking user space page tables
+[   10.034500] x86/mm: Checked W+X mappings: passed, no W+X pages found.
 Loading, please wait...
 starting version 237
-[   11.983225] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
-[   12.006168] e1000: Copyright (c) 1999-2006 Intel Corporation.
-[   12.050914] Fusion MPT base driver 3.04.20
-[   12.062767] Copyright (c) 1999-2008 LSI Corporation
-[   12.342299] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
-[   12.444006] Fusion MPT SPI Host driver 3.04.20
-[   12.637507] AVX version of gcm_enc/dec engaged.
-[   12.650476] AES CTR mode by8 optimization enabled
-[   14.929498] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 02:27:36:10:00:0e
-[   14.946040] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
-[   14.979925] e1000 0000:00:03.0 enp0s3: renamed from eth0
-[   14.980825] mptbase: ioc0: Initiating bringup
-[   15.248833] ioc0: LSI53C1030 A0: Capabilities={Initiator}
-[   16.081758] scsi host2: ioc0: LSI53C1030 A0, FwRev=00000000h, Ports=1, MaxQ=256, IRQ=20
-[   16.281568] scsi 2:0:0:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
-[   16.348609] scsi target2:0:0: Beginning Domain Validation
-[   16.372346] random: fast init done
-[   16.385826] scsi target2:0:0: Domain Validation skipping write tests
-[   16.403352] scsi target2:0:0: Ending Domain Validation
-[   16.418004] scsi target2:0:0: asynchronous
-[   16.433972] scsi 2:0:1:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
-[   16.488288] scsi target2:0:1: Beginning Domain Validation
-[   16.516502] scsi target2:0:1: Domain Validation skipping write tests
-[   16.534899] scsi target2:0:1: Ending Domain Validation
-[   16.552271] scsi target2:0:1: asynchronous
-[   16.655170] random: systemd-udevd: uninitialized urandom read (16 bytes read)
-[   16.676935] sd 2:0:0:0: Attached scsi generic sg0 type 0
-[   16.680985] random: systemd-udevd: uninitialized urandom read (16 bytes read)
-[   16.718636] random: systemd-udevd: uninitialized urandom read (16 bytes read)
-[   16.741119] sd 2:0:1:0: Attached scsi generic sg1 type 0
-[   16.763549] sd 2:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
-[   16.780862] sd 2:0:1:0: [sdb] 20480 512-byte logical blocks: (10.5 MB/10.0 MiB)
-[   16.819739] sd 2:0:0:0: [sda] Write Protect is off
-[   16.819863] sd 2:0:1:0: [sdb] Write Protect is off
-[   16.877430] sd 2:0:0:0: [sda] Incomplete mode parameter data
-[   16.887478] sd 2:0:1:0: [sdb] Incomplete mode parameter data
-[   16.919893] sd 2:0:0:0: [sda] Assuming drive cache: write through
-[   16.990900] sd 2:0:1:0: [sdb] Assuming drive cache: write through
-[   17.087737]  sda: sda1
-[   17.124699] sd 2:0:0:0: [sda] Attached SCSI disk
-[   17.130255] sd 2:0:1:0: [sdb] Attached SCSI disk
-Begin: Loading essential drivers ... [   27.908907] raid6: sse2x1   gen()   393 MB/s
-[   27.968266] raid6: sse2x1   xor()   246 MB/s
-[   28.024179] raid6: sse2x2   gen()   760 MB/s
-[   28.080506] raid6: sse2x2   xor()   352 MB/s
-[   28.140253] raid6: sse2x4   gen()   920 MB/s
-[   28.196682] raid6: sse2x4   xor()   487 MB/s
-[   28.208657] raid6: using algorithm sse2x4 gen() 920 MB/s
-[   28.227763] raid6: .... xor() 487 MB/s, rmw enabled
-[   28.241647] raid6: using ssse3x2 recovery algorithm
-[   28.270400] xor: automatically using best checksumming function   avx       
-[   28.317879] async_tx: api initialized (async)
+[   11.316390] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[   11.337241] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[   11.423506] Fusion MPT base driver 3.04.20
+[   11.435390] Copyright (c) 1999-2008 LSI Corporation
+[   11.683145] Fusion MPT SPI Host driver 3.04.20
+[   11.792771] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[   12.066074] AVX version of gcm_enc/dec engaged.
+[   12.080615] AES CTR mode by8 optimization enabled
+[   13.474063] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 02:27:36:10:00:0e
+[   13.492862] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[   13.526735] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[   13.527179] mptbase: ioc0: Initiating bringup
+[   14.416812] ioc0: LSI53C1030 A0: Capabilities={Initiator}
+[   17.148915] scsi host2: ioc0: LSI53C1030 A0, FwRev=00000000h, Ports=1, MaxQ=256, IRQ=20
+[   18.527355] scsi 2:0:0:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
+[   19.425456] scsi target2:0:0: Beginning Domain Validation
+[   19.455133] random: fast init done
+[   19.469045] scsi target2:0:0: Domain Validation skipping write tests
+[   19.499296] scsi target2:0:0: Ending Domain Validation
+[   19.513610] scsi target2:0:0: asynchronous
+[   19.538819] scsi 2:0:1:0: Direct-Access     VBOX     HARDDISK         1.0  PQ: 0 ANSI: 5
+[   20.366971] scsi target2:0:1: Beginning Domain Validation
+[   20.391720] scsi target2:0:1: Domain Validation skipping write tests
+[   20.408144] scsi target2:0:1: Ending Domain Validation
+[   20.421735] scsi target2:0:1: asynchronous
+[   20.505208] random: systemd-udevd: uninitialized urandom read (16 bytes read)
+[   20.509262] sd 2:0:0:0: [sda] 20971520 512-byte logical blocks: (10.7 GB/10.0 GiB)
+[   20.535880] random: systemd-udevd: uninitialized urandom read (16 bytes read)
+[   20.566322] sd 2:0:0:0: Attached scsi generic sg0 type 0
+[   20.570373] sd 2:0:1:0: Attached scsi generic sg1 type 0
+[   20.572683] sd 2:0:0:0: [sda] Write Protect is off
+[   20.589500] random: systemd-udevd: uninitialized urandom read (16 bytes read)
+[   20.663291] sd 2:0:1:0: [sdb] 20480 512-byte logical blocks: (10.5 MB/10.0 MiB)
+[   20.685989] sd 2:0:0:0: [sda] Incomplete mode parameter data
+[   20.689368] sd 2:0:1:0: [sdb] Write Protect is off
+[   20.707967] sd 2:0:0:0: [sda] Assuming drive cache: write through
+[   20.759903] sd 2:0:1:0: [sdb] Incomplete mode parameter data
+[   20.777478] sd 2:0:1:0: [sdb] Assuming drive cache: write through
+[   20.818574]  sda: sda1
+[   20.857202] sd 2:0:1:0: [sdb] Attached SCSI disk
+[   20.857631] sd 2:0:0:0: [sda] Attached SCSI disk
+Begin: Loading essential drivers ... [   31.524978] raid6: sse2x1   gen()   323 MB/s
+[   31.592440] raid6: sse2x1   xor()   186 MB/s
+[   31.645468] raid6: sse2x2   gen()   521 MB/s
+[   31.712466] raid6: sse2x2   xor()   278 MB/s
+[   31.772289] raid6: sse2x4   gen()   807 MB/s
+[   31.824607] raid6: sse2x4   xor()   431 MB/s
+[   31.838524] raid6: using algorithm sse2x4 gen() 807 MB/s
+[   31.855233] raid6: .... xor() 431 MB/s, rmw enabled
+[   31.870637] raid6: using ssse3x2 recovery algorithm
+[   31.903753] xor: automatically using best checksumming function   avx       
+[   31.972268] async_tx: api initialized (async)
 done.
 Begin: Running /scripts/init-premount ... done.
 Begin: Mounting root file system ... Begin: Running /scripts/local-top ... done.
-Begin: Running /scripts/local-premount ... [   29.179376] Btrfs loaded, crc32c=crc32c-intel
+Begin: Running /scripts/local-premount ... [   33.072720] Btrfs loaded, crc32c=crc32c-intel
 Scanning for Btrfs filesystems
 done.
 Warning: fsck not present, so skipping root file system
-[   29.628875] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[   33.645122] EXT4-fs (sda1): INFO: recovery required on readonly filesystem
+[   33.662053] EXT4-fs (sda1): write access will be enabled during recovery
+[   35.109732] random: crng init done
+[   35.127622] random: 7 urandom warning(s) missed due to ratelimiting
+[   38.455029] EXT4-fs (sda1): orphan cleanup on readonly fs
+[   38.569257] EXT4-fs (sda1): 12 orphan inodes deleted
+[   38.583877] EXT4-fs (sda1): recovery complete
+[   38.603327] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
 done.
 Begin: Running /scripts/local-bottom ... done.
 Begin: Running /scripts/init-bottom ... done.
-[   31.472542] random: crng init done
-[   31.479579] random: 7 urandom warning(s) missed due to ratelimiting
-[   32.335787] ip_tables: (C) 2000-2006 Netfilter Core Team
-[   32.598306] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
-[   32.654941] systemd[1]: Detected virtualization oracle.
-[   32.670506] systemd[1]: Detected architecture x86-64.
+[   42.357490] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   42.696800] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[   42.751577] systemd[1]: Detected virtualization oracle.
+[   42.765112] systemd[1]: Detected architecture x86-64.
 
 Welcome to [1mUbuntu 18.04.4 LTS[0m!
 
-[   32.787888] systemd[1]: Set hostname to <ubuntu>.
-[   32.890264] systemd[1]: Initializing machine ID from random generator.
-[   32.907633] systemd[1]: Installed transient /etc/machine-id file.
-[   36.435566] systemd[1]: Reached target Swap.
-[[0;32m  OK  [0m] Reached target Swap.
-[   36.460900] systemd[1]: Reached target User and Group Name Lookups.
-[[0;32m  OK  [0m] Reached target User and Group Name Lookups.
-[   36.496291] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
-[[0;32m  OK  [0m] Set up automount Arbitrary Executab…rmats File System Automount Point.
-[   36.594617] systemd[1]: Created slice User and Session Slice.
+[   42.879896] systemd[1]: Set hostname to <ubuntu-bionic>.
+[   47.769157] systemd[1]: Created slice User and Session Slice.
 [[0;32m  OK  [0m] Created slice User and Session Slice.
-[[0;32m  OK  [0m] Created slice System Slice.
-[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
-[[0;32m  OK  [0m] Listening on udev Control Socket.
-[[0;32m  OK  [0m] Reached target Slices.
-[[0;32m  OK  [0m] Listening on Journal Socket.
-         Starting Set the console keyboard layout...
-         Starting Remount Root and Kernel File Systems...
-[[0;32m  OK  [0m] Listening on LVM2 poll daemon socket.
-[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
-         Mounting Huge Pages File System...
-         Starting Load Kernel Modules...
-[[0;32m  OK  [0m] Listening on LVM2 metadata daemon socket.
-[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
-         Mounting POSIX Message Queue File System...
-         Mounting Kernel Debug File System...
-[[0;32m  OK  [0m] Listening on Network Service Netlink Socket.
-         Starting Uncomplicated firewall...
+[   47.801162] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[[0;32m  OK  [0m] Set up automount Arbitrary Executab…rmats File System Automount Point.
+[   47.845498] systemd[1]: Reached target User and Group Name Lookups.
+[[0;32m  OK  [0m] Reached target User and Group Name Lookups.
+[   47.896722] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
 [[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
-[   37.224362] EXT4-fs (sda1): re-mounted. Opts: (null)
+[   47.934632] systemd[1]: Reached target Swap.
+[[0;32m  OK  [0m] Reached target Swap.
+[   47.972137] systemd[1]: Created slice System Slice.
+[[0;32m  OK  [0m] Created slice System Slice.
+[   48.011087] systemd[1]: Listening on Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[   48.044530] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[   48.074520] systemd[1]: Reached target Slices.
+[[0;32m  OK  [0m] Reached target Slices.
+[   48.095219] systemd[1]: Listening on Journal Audit Socket.
 [[0;32m  OK  [0m] Listening on Journal Audit Socket.
+[[0;32m  OK  [0m] Listening on Network Service Netlink Socket.
+[[0;32m  OK  [0m] Listening on LVM2 poll daemon socket.
+[[0;32m  OK  [0m] Listening on Journal Socket.
+         Mounting POSIX Message Queue File System...
+         Starting Load Kernel Modules...
+         Mounting Huge Pages File System...
+[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+         Starting Uncomplicated firewall...
+         Starting Remount Root and Kernel File Systems...
 [[0;32m  OK  [0m] Listening on udev Kernel Socket.
 [[0;32m  OK  [0m] Listening on Syslog Socket.
          Starting Journal Service...
-[[0;32m  OK  [0m] Reached target System Time Synchronized.
-[[0;32m  OK  [0m] Listening on Device-mapper event daemon FIFOs.
-         Starting Monitoring of LVM2 mirrors…ng dmeventd or progress polling...
+         Mounting Kernel Debug File System...
+         Starting Set the console keyboard layout...
+[[0;32m  OK  [0m] Listening on udev Control Socket.
          Starting udev Coldplug all Devices...
-[   37.663134] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+[[0;32m  OK  [0m] Listening on Device-mapper event daemon FIFOs.
+[[0;32m  OK  [0m] Listening on LVM2 metadata daemon socket.
+         Starting Monitoring of LVM2 mirrors…ng dmeventd or progress polling...
          Starting Create list of required st…ce nodes for the current kernel...
-[   37.878016] systemd[1]: Started Remount Root and Kernel File Systems.
-[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
-[   38.007430] Loading iSCSI transport class v2.0-870.
-[   38.101013] systemd[1]: Mounted Huge Pages File System.
-[[0;32m  OK  [0m] Mounted Huge Pages File System.
-[   38.213031] systemd[1]: Mounted POSIX Message Queue File System.
+[[0;32m  OK  [0m] Reached target System Time Synchronized.
 [[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
-[   38.341680] systemd[1]: Mounted Kernel Debug File System.
-[[0;32m  OK  [0m] Mounted Kernel Debug File System.
-[   38.413747] systemd[1]: Started Uncomplicated firewall.
+[[0;32m  OK  [0m] Mounted Huge Pages File System.
 [[0;32m  OK  [0m] Started Uncomplicated firewall.
-[   38.502986] systemd[1]: Starting Load/Save Random Seed...
-         Starting Load/Save Random Seed...
-[   38.599716] systemd[1]: Started Create list of required static device nodes for the current kernel.
+[[0;32m  OK  [0m] Mounted Kernel Debug File System.[   48.834127] Loading iSCSI transport class v2.0-870.
+
+[   48.906832] EXT4-fs (sda1): re-mounted. Opts: (null)
 [[0;32m  OK  [0m] Started Create list of required sta…vice nodes for the current kernel.
-[   38.688274] systemd[1]: Starting Create Static Device Nodes in /dev...
          Starting Create Static Device Nodes in /dev...
-[   38.827465] iscsi: registered transport (tcp)
-[   38.869793] systemd[1]: Started Load/Save Random Seed.
+[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
+         Starting Load/Save Random Seed...
+[   49.438556] iscsi: registered transport (tcp)
 [[0;32m  OK  [0m] Started Load/Save Random Seed.
-[[0;32m  OK  [0m] Started LVM2 metadata daemon.
 [[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
          Starting udev Kernel Device Manager...
-[[0;32m  OK  [0m] Started Monitoring of LVM2 mirrors,…sing dmeventd or progress polling.
-[   40.171466] iscsi: registered transport (iser)
-[[0;32m  OK  [0m] Started Load Kernel Modules.
-         Starting Apply Kernel Variables...
-         Mounting FUSE Control File System...
-         Mounting Kernel Configuration File System...
-[[0;32m  OK  [0m] Mounted FUSE Control File System.
-[[0;32m  OK  [0m] Mounted Kernel Configuration File System.
-[[0;32m  OK  [0m] Started Apply Kernel Variables.
-[[0;32m  OK  [0m] Started udev Kernel Device Manager.
+[[0;32m  OK  [0m] Started LVM2 metadata daemon.
+[[0;32m  OK  [0m] Started udev Coldplug all Devices.
 [[0;32m  OK  [0m] Started Journal Service.
          Starting Flush Journal to Persistent Storage...
-[[0;32m  OK  [0m] Started udev Coldplug all Devices.
+[   50.799322] systemd-journald[394]: Received request to flush runtime journal from PID 1
+[   50.860423] iscsi: registered transport (iser)
+[[0;32m  OK  [0m] Started Load Kernel Modules.
+         Starting Apply Kernel Variables...
+         Mounting Kernel Configuration File System...
+         Mounting FUSE Control File System...
+[[0;32m  OK  [0m] Started Monitoring of LVM2 mirrors,…sing dmeventd or progress polling.
+[   51.147169] systemd-journald[394]: File /var/log/journal/d7a6989ef92a4fa7bc78b6f5a00ec923/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[[0;32m  OK  [0m] Mounted FUSE Control File System.
+[[0;32m  OK  [0m] Mounted Kernel Configuration File System.
+[[0;32m  OK  [0m] Started udev Kernel Device Manager.
+[[0;32m  OK  [0m] Started Apply Kernel Variables.
 [[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
 [[0;32m  OK  [0m] Started Set the console keyboard layout.
-[[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
-[[0;32m  OK  [0m] Reached target Local Encrypted Volumes.
 [[0;32m  OK  [0m] Reached target Local File Systems (Pre).
 [[0;32m  OK  [0m] Reached target Local File Systems.
+         Starting AppArmor initialization...
          Starting Set console font and keymap...
          Starting Tell Plymouth To Write Out Runtime Data...
          Starting ebtables ruleset management...
-         Starting Commit a transient machine-id on disk...
          Starting Create Volatile Files and Directories...
-         Starting AppArmor initialization...
-[[0;32m  OK  [0m] Started Tell Plymouth To Write Out Runtime Data.
+[[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Reached target Local Encrypted Volumes.
 [[0;32m  OK  [0m] Started Set console font and keymap.
-[[0;32m  OK  [0m] Started Commit a transient machine-id on disk.
+[[0;32m  OK  [0m] Started Tell Plymouth To Write Out Runtime Data.
 [[0;32m  OK  [0m] Started Create Volatile Files and Directories.
          Starting Update UTMP about System Boot/Shutdown...
 [[0;32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
 [[0;32m  OK  [0m] Started ebtables ruleset management.
-[[0m[0;31m*     [0m] (1 of 2) A start job is running for dev-ttyS0.device (12s / 1min 30s)[K[[0;32m  OK  [0m] Found device /dev/ttyS0.
-[[0;32m  OK  [0m] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
-[[0;1;31m*[0m[0;31m*    [0m] A start job is running for AppArmor initialization (19s / no limit)[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for AppArmor initialization (20s / no limit)[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for AppArmor initialization (21s / no limit)[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for AppArmor initialization (21s / no limit)[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for AppArmor initialization (22s / no limit)[K[    [0;31m*[0;1;31m*[0m] A start job is running for AppArmor initialization (22s / no limit)[K[     [0;31m*[0m] A start job is running for AppArmor initialization (23s / no limit)[K[    [0;31m*[0;1;31m*[0m] A start job is running for AppArmor initialization (23s / no limit)[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for AppArmor initialization (24s / no limit)[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for AppArmor initialization (24s / no limit)[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for AppArmor initialization (25s / no limit)[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for AppArmor initialization (25s / no limit)[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for AppArmor initialization (26s / no limit)[K[[0m[0;31m*     [0m] A start job is running for AppArmor initialization (26s / no limit)[K[[0;1;31m*[0m[0;31m*    [0m] A start job is running for AppArmor initialization (27s / no limit)[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] A start job is running for AppArmor initialization (27s / no limit)[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] A start job is running for AppArmor initialization (28s / no limit)[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] A start job is running for AppArmor initialization (28s / no limit)[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] A start job is running for AppArmor initialization (29s / no limit)[K[    [0;31m*[0;1;31m*[0m] A start job is running for AppArmor initialization (29s / no limit)[K[[0;32m  OK  [0m] Started AppArmor initialization.
+[[0;32m  OK  [0m] Started AppArmor initialization.
          Starting Initial cloud-init job (pre-networking)...
          Starting Load AppArmor profiles managed internally by snapd...
 [[0;32m  OK  [0m] Started Load AppArmor profiles managed internally by snapd.
-[   85.557344] cloud-init[529]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'init-local' at Sun, 19 Jul 2020 05:04:34 +0000. Up 79.87 seconds.
+[[0;32m  OK  [0m] Found device /dev/ttyS0.
+[[0;32m  OK  [0m] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[   78.681349] cloud-init[505]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'init-local' at Wed, 05 Aug 2020 14:58:47 +0000. Up 75.16 seconds.
 [[0;32m  OK  [0m] Started Initial cloud-init job (pre-networking).
 [[0;32m  OK  [0m] Reached target Network (Pre).
          Starting Network Service...
@@ -481,1380 +480,101 @@ Welcome to [1mUbuntu 18.04.4 LTS[0m!
 [[0;32m  OK  [0m] Reached target Host and Network Name Lookups.
 [[0;32m  OK  [0m] Started Wait for Network to be Configured.
          Starting Initial cloud-init job (metadata service crawler)...
-[   99.963026] cloud-init[631]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'init' at Sun, 19 Jul 2020 05:04:51 +0000. Up 96.72 seconds.
-[   99.984763] cloud-init[631]: ci-info: ++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++
-[  100.008283] cloud-init[631]: ci-info: +--------+------+-------------------------+---------------+--------+-------------------+
-[  100.027387] cloud-init[631]: ci-info: | Device |  Up  |         Address         |      Mask     | Scope  |     Hw-Address    |
-[  100.044867] cloud-init[631]: ci-info: +--------+------+-------------------------+---------------+--------+-------------------+
-[  100.067862] cloud-init[631]: ci-info: | enp0s3 | True |        10.0.2.15        | 255.255.255.0 | global | 02:27:36:10:00:0e |
-[  100.093640] cloud-init[631]: ci-info: | enp0s3 | True | fe80::27:36ff:fe10:e/64 |       .       |  link  | 02:27:36:10:00:0e |
-[  100.119272] cloud-init[631]: ci-info: |   lo   | True |        127.0.0.1        |   255.0.0.0   |  host  |         .         |
-[  100.140907] cloud-init[631]: ci-info: |   lo   | True |         ::1/128         |       .       |  host  |         .         |
-[  100.159521] cloud-init[631]: ci-info: +--------+------+-------------------------+---------------+--------+-------------------+
-[  100.183151] cloud-init[631]: ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
-[  100.210211] cloud-init[631]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
-[  100.238309] cloud-init[631]: ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
-[  100.257830] cloud-init[631]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
-[  100.282526] cloud-init[631]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |   enp0s3  |   UG  |
-[  100.306296] cloud-init[631]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |   enp0s3  |   U   |
-[  100.320711] cloud-init[631]: ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |   enp0s3  |   UH  |
-[  100.343059] cloud-init[631]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
-[  100.362734] cloud-init[631]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
-[  100.380772] cloud-init[631]: ci-info: +-------+-------------+---------+-----------+-------+
-[  100.399636] cloud-init[631]: ci-info: | Route | Destination | Gateway | Interface | Flags |
-[  100.418328] cloud-init[631]: ci-info: +-------+-------------+---------+-----------+-------+
-[  100.435643] cloud-init[631]: ci-info: |   1   |  fe80::/64  |    ::   |   enp0s3  |   U   |
-[  100.451095] cloud-init[631]: ci-info: |   3   |    local    |    ::   |   enp0s3  |   U   |
-[  100.470899] cloud-init[631]: ci-info: |   4   |   ff00::/8  |    ::   |   enp0s3  |   U   |
-[  100.488378] cloud-init[631]: ci-info: +-------+-------------+---------+-----------+-------+
-[  107.924663] cloud-init[631]: Generating public/private rsa key pair.
-[  107.939879] cloud-init[631]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
-[  107.970359] cloud-init[631]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
-[  107.990292] cloud-init[631]: The key fingerprint is:
-[  107.998964] cloud-init[631]: SHA256:n84xIcWjwLVO4lIF7HowkhuMdH9DZs2ASkRuFxKpiM8 root@ubuntu-bionic
-[  108.021550] cloud-init[631]: The key's randomart image is:
-[  108.046163] cloud-init[631]: +---[RSA 2048]----+
-[  108.059198] cloud-init[631]: |  o=oooo*        |
-[  108.082334] cloud-init[631]: | ..+.oo* =       |
-[  108.091482] cloud-init[631]: |+o++ooO o +      |
-[  108.109577] cloud-init[631]: |+.*.++.B o .     |
-[  108.131162] cloud-init[631]: | o +.+o S .      |
-[  108.141931] cloud-init[631]: |  E ...  o o     |
-[  108.151838] cloud-init[631]: |     .    =      |
-[  108.170047] cloud-init[631]: |         o o     |
-[  108.181064] cloud-init[631]: |          o      |
-[  108.191417] cloud-init[631]: +----[SHA256]-----+
-[  108.200182] cloud-init[631]: Generating public/private dsa key pair.
-[  108.209125] cloud-init[631]: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
-[  108.229786] cloud-init[631]: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
-[  108.243781] cloud-init[631]: The key fingerprint is:
-[  108.265827] cloud-init[631]: SHA256:qyTy17bSjVHsiRpRVuPwXM9x21Op8aRS1Lf5euU9Bfo root@ubuntu-bionic
-[  108.286033] cloud-init[631]: The key's randomart image is:
-[  108.299071] cloud-init[631]: +---[DSA 1024]----+
-[  108.311629] cloud-init[631]: |        ..o o.o +|
-[  108.322436] cloud-init[631]: |        o= o = *=|
-[  108.338288] cloud-init[631]: |       o .+ . Oo=|
-[  108.346112] cloud-init[631]: |      .   o. o.+.|
-[  108.354284] cloud-init[631]: |       .S+ ... ..|
-[  108.366149] cloud-init[631]: |      . o.o .   +|
-[  108.393312] cloud-init[631]: |  . . .=.+   . o+|
-[  108.414398] cloud-init[631]: |   o o+.= .   E.+|
-[  108.426541] cloud-init[631]: |    ...o..     ..|
-[  108.450056] cloud-init[631]: +----[SHA256]-----+
-[  108.460063] cloud-init[631]: Generating public/private ecdsa key pair.
-[  108.475232] cloud-init[631]: Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key.
-[  108.498100] cloud-init[631]: Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub.
-[  108.516878] cloud-init[631]: The key fingerprint is:
-[  108.529859] cloud-init[631]: SHA256:xuJERODTpdgnqdxSpOVeEElJNTxamMHy+OiuUv0A5B8 root@ubuntu-bionic
-[  108.557409] cloud-init[631]: The key's randomart image is:
-[  108.573927] cloud-init[631]: +---[ECDSA 256]---+
-[  108.591441] cloud-init[631]: |    .*@X+        |
-[  108.604294] cloud-init[631]: |  ...X*=+.       |
+[   93.784040] cloud-init[644]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'init' at Wed, 05 Aug 2020 14:59:02 +0000. Up 90.23 seconds.
+[   93.818070] cloud-init[644]: ci-info: ++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++
+[   93.839601] cloud-init[644]: ci-info: +--------+------+-------------------------+---------------+--------+-------------------+
+[   93.859383] cloud-init[644]: ci-info: | Device |  Up  |         Address         |      Mask     | Scope  |     Hw-Address    |
+[   93.883407] cloud-init[644]: ci-info: +--------+------+-------------------------+---------------+--------+-------------------+
+[   93.908776] cloud-init[644]: ci-info: | enp0s3 | True |        10.0.2.15        | 255.255.255.0 | global | 02:27:36:10:00:0e |
+[   93.932961] cloud-init[644]: ci-info: | enp0s3 | True | fe80::27:36ff:fe10:e/64 |       .       |  link  | 02:27:36:10:00:0e |
+[   93.970246] cloud-init[644]: ci-info: |   lo   | True |        127.0.0.1        |   255.0.0.0   |  host  |         .         |
+[   94.001497] cloud-init[644]: ci-info: |   lo   | True |         ::1/128         |       .       |  host  |         .         |
+[   94.036245] cloud-init[644]: ci-info: +--------+------+-------------------------+---------------+--------+-------------------+
+[   94.058256] cloud-init[644]: ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+[   94.078086] cloud-init[644]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   94.101312] cloud-init[644]: ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+[   94.121892] cloud-init[644]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   94.138961] cloud-init[644]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |   enp0s3  |   UG  |
+[   94.160080] cloud-init[644]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |   enp0s3  |   U   |
+[   94.176855] cloud-init[644]: ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |   enp0s3  |   UH  |
+[   94.196249] cloud-init[644]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+[   94.213155] cloud-init[644]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+[   94.228646] cloud-init[644]: ci-info: +-------+-------------+---------+-----------+-------+
+[   94.242820] cloud-init[644]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+[   94.258137] cloud-init[644]: ci-info: +-------+-------------+---------+-----------+-------+
+[   94.275348] cloud-init[644]: ci-info: |   1   |  fe80::/64  |    ::   |   enp0s3  |   U   |
+[   94.291213] cloud-init[644]: ci-info: |   3   |    local    |    ::   |   enp0s3  |   U   |
+[   94.305859] cloud-init[644]: ci-info: |   4   |   ff00::/8  |    ::   |   enp0s3  |   U   |
+[   94.320601] cloud-init[644]: ci-info: +-------+-------------+---------+-----------+-------+
 [[0;32m  OK  [0m] Started Initial cloud-init job (metadata service crawler).
-[  108.640597] [cloud-init[0;32m  OK  [0m[631]: ] Reached target System Initialization.| o  =+Xoo.       |
-
-[[0;32m  OK  [0m] Listening on UUID daemon activation socket.
-[  108.664651] cloud-init[631]: |  o.EBo=         |
-[[0;32m  OK  [0m] Started Daily apt download activities.
-[  108.706699] cloud-init[[0;32m  OK  [0m] Listening on Open-iSCSI iscsid Socket.
-[631]: |   +++= S        |
-         Starting Socket activation for snappy daemon.
-[  108.741180] cloud-init[631]: |  . =+.o         |
-[  108.750244] cloud-init[631]: | . . o.          |
-[[0;32m  OK  [0m] Started Discard unused blocks once a week.
+[[0;32m  OK  [0m] Reached target Cloud-config availability.
+[[0;32m  OK  [0m] Reached target System Initialization.
 [[0;32m  OK  [0m] Listening on ACPID Listen Socket.
+[[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
+         Starting LXD - unix socket.
+[[0;32m  OK  [0m] Started Discard unused blocks once a week.
+[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
 [[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
-[[0;32m  OK  [0m] Started Message of the Day.
-[  108.765160] cloud-init[631]: |.   . .          |
-[  108.822920] cloud-init[631]: | ..o.            |
-[  108.840815] cloud-init[631]: +----[SHA256]-----+
-[  108.849542] cloud-init[631]: Generating public/private ed25519 key pair.
-[  108.862053] cloud-init[631]: Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
-[  108.879040] cloud-init[631]: Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
-[  108.902142] [cloud-init[631]: [0;32m  OK  [0mThe key fingerprint is:] 
-Started ACPI Events Check.
-[  108.929302] [[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
-cloud-init[631]: SHA256:AbtzjD7Z1qNAoD8EbpXgN+3ABXzswpC9Qqm/E77hDoY root@ubuntu-bionic
-[  108.957476] cloud-init[631]: The key's randomart image is:
-[  108.969685]          Starting LXD - unix socket.
-cloud-init[631]: +--[ED25519 256]--+
-[  108.994521] [[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
-cloud-init[631]: |  .=.oo          |
+[[0;32m  OK  [0m] Started ACPI Events Check.
 [[0;32m  OK  [0m] Reached target Paths.
+[[0;32m  OK  [0m] Started Message of the Day.
+[[0;32m  OK  [0m] Listening on Open-iSCSI iscsid Socket.
+[[0;32m  OK  [0m] Listening on UUID daemon activation socket.
 [[0;32m  OK  [0m] Reached target Timers.
-[  109.025103] cloud-init[[0;32m  OK  [0m[631]: | .=oo+oo         |
-] Reached target Cloud-config availability.
+         Starting Socket activation for snappy daemon.
 [[0;32m  OK  [0m] Reached target Network is Online.
-[  109.056755] cloud-init[631]: | oooO+o .        |
-[  109.062686] cloud-init[631]: |...=+=.+ .       |
-[  109.072832] [cloud-init[0;32m  OK  [0m[631]: ] | .+...* S        |Reached target Remote File Systems (Pre).
-
+         Starting Availability of block devices...
+[[0;32m  OK  [0m] Reached target Remote File Systems (Pre).
 [[0;32m  OK  [0m] Reached target Remote File Systems.
-[  109.100677] cloud-init[631]: |..oo o = .       |         Starting Availability of block devices...
-[[0;32m  OK  [0m] Listening on Socket activation for snappy daemon.
 [[0;32m  OK  [0m] Listening on LXD - unix socket.
+[[0;32m  OK  [0m] Listening on Socket activation for snappy daemon.
 [[0;32m  OK  [0m] Reached target Sockets.
 [[0;32m  OK  [0m] Reached target Basic System.
-
-[  109.178224] cloud-init[631]: |Eo.oo = o o      |         Starting Accounts Service...
-
-         Starting LSB: Record successful boot for GRUB...
-         Starting LSB: automatic crash report generation...
-[  109.284950] cloud-init[631]: |.o+. . + . .     |[[0;32m  OK  [0m] Started D-Bus System Message Bus.
-
-[  109.383308] cloud-init[631]: | .+o    .        |
-[  109.538073] cloud-init[631]: +----[SHA256]-----+
-         Starting Virtualbox guest utils...
-[[0;32m  OK  [0m] Started Regular background program processing daemon.
-[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
-         Starting Dispatcher daemon for systemd-networkd...
-[[0;32m  OK  [0m] Started irqbalance daemon.
+         Starting Message of the Day...
          Starting Permit User Sessions...
+         Starting LSB: automatic crash report generation...
          Starting System Logging Service...
-[[0;32m  OK  [0m] Started Deferred execution scheduler.
-         Starting LXD - container startup/shutdown...
-         Starting Login Service...
-         Starting Pollinate to seed the pseudo random number generator...
+[[0;32m  OK  [0m] Started FUSE filesystem for LXC.
+         Starting Daily apt upgrade and clean activities...
+         Starting LSB: Record successful boot for GRUB...
+[[0;32m  OK  [0m] Started irqbalance daemon.
+[[0;32m  OK  [0m] Started Regular background program processing daemon.
          Starting Snap Daemon...
+         Starting Dispatcher daemon for systemd-networkd...
+         Starting OpenBSD Secure Shell server...
+[[0;32m  OK  [0m] Started D-Bus System Message Bus.
+         Starting Discard unused blocks...
+[[0;32m  OK  [0m] Started Deferred execution scheduler.
+         Starting Login Service...
+         Starting Virtualbox guest utils...
+         Starting Accounts Service...
+         Starting LXD - container startup/shutdown...
+[[0;32m  OK  [0m] Started System Logging Service.
 [[0;32m  OK  [0m] Started Availability of block devices.
 [[0;32m  OK  [0m] Started Permit User Sessions.
-[[0;32m  OK  [0m] Started System Logging Service.
-         Starting Authorization Manager...
+[[0;32m  OK  [0m] Started Discard unused blocks.
          Starting Terminate Plymouth Boot Screen...
          Starting Hold until boot process finishes up...
 [[0;32m  OK  [0m] Started Terminate Plymouth Boot Screen.
 [[0;32m  OK  [0m] Started Hold until boot process finishes up.
-[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
          Starting Set console scheme...
-[[0;32m  OK  [0m] Started LSB: automatic crash report generation.
+[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
+[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
 [[0;32m  OK  [0m] Started Set console scheme.
 [[0;32m  OK  [0m] Created slice system-getty.slice.
 [[0;32m  OK  [0m] Started Getty on tty1.
 [[0;32m  OK  [0m] Reached target Login Prompts.
+[[0;32m  OK  [0m] Started LSB: automatic crash report generation.
 [[0;32m  OK  [0m] Started LSB: Record successful boot for GRUB.
-[[0;32m  OK  [0m] Started Authorization Manager.
-[[0;32m  OK  [0m] Started Accounts Service.
 [[0;32m  OK  [0m] Started Login Service.
 [[0;32m  OK  [0m] Started Unattended Upgrades Shutdown.
+         Starting Authorization Manager...
+[[0;32m  OK  [0m] Started Authorization Manager.
+[[0;32m  OK  [0m] Started Accounts Service.
 [[0;32m  OK  [0m] Started Virtualbox guest utils.
 
 Ubuntu 18.04.4 LTS ubuntu-bionic ttyS0
 
-ubuntu-bionic login: [  145.264803] cloud-init[969]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'modules:config' at Sun, 19 Jul 2020 05:05:30 +0000. Up 135.52 seconds.
-ci-info: no authorized SSH keys fingerprints found for user ubuntu.
-<14>Jul 19 05:05:52 ec2: 
-<14>Jul 19 05:05:52 ec2: #############################################################
-<14>Jul 19 05:05:52 ec2: -----BEGIN SSH HOST KEY FINGERPRINTS-----
-<14>Jul 19 05:05:52 ec2: 1024 SHA256:qyTy17bSjVHsiRpRVuPwXM9x21Op8aRS1Lf5euU9Bfo root@ubuntu-bionic (DSA)
-<14>Jul 19 05:05:52 ec2: 256 SHA256:xuJERODTpdgnqdxSpOVeEElJNTxamMHy+OiuUv0A5B8 root@ubuntu-bionic (ECDSA)
-<14>Jul 19 05:05:52 ec2: 256 SHA256:AbtzjD7Z1qNAoD8EbpXgN+3ABXzswpC9Qqm/E77hDoY root@ubuntu-bionic (ED25519)
-<14>Jul 19 05:05:52 ec2: 2048 SHA256:n84xIcWjwLVO4lIF7HowkhuMdH9DZs2ASkRuFxKpiM8 root@ubuntu-bionic (RSA)
-<14>Jul 19 05:05:52 ec2: -----END SSH HOST KEY FINGERPRINTS-----
-<14>Jul 19 05:05:52 ec2: #############################################################
------BEGIN SSH HOST KEY KEYS-----
-ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBITz1kZC3lg3CBxmmEzZVH6jtXBmFR5DUtoQ4L/xnL1+f48ubeuDzIQqRiSDUP9ln55OGurHu2PKI9qGoNDMw9s= root@ubuntu-bionic
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO73HOimJXoPOQo+kR0K/E81nT0QzlMi94DMZyyauTgO root@ubuntu-bionic
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6YAwEdzs8X98lwmSDSE9J3Hp43YXDYSfzGJCN84OAo5014eRmOi7WU/JSECmb/NuyNN1W7JnSUnheaObasKX3+wW854d2xlKjqXq8yutC51UsYzIcJXd5zFVgRk08zjgGcyvqRErqq6LQuB2cBcNJDFMuhcDELuUObMvbtsmdWQ20TGTR2VSRRIlfL0hLxvggQWmrhRS9o8a+pvKVWWsNmU5rDXLLF2QkrW/fbNrZFVbgRsuJqxRNOKPmU8cZQgrPZsRmyniLvWtHgxyTtAL6lqbwrt9SKGBxsnEVNXJGLiBsuLaeasswFwAZwrbVewtA7L7JlOtftyhh6H4xhUMB root@ubuntu-bionic
------END SSH HOST KEY KEYS-----
-[  158.059579] cloud-init[1149]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'modules:final' at Sun, 19 Jul 2020 05:05:49 +0000. Up 155.02 seconds.
-[  158.134871] cloud-init[1149]: ci-info: no authorized SSH keys fingerprints found for user ubuntu.
-[  158.166765] cloud-init[1149]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 finished at Sun, 19 Jul 2020 05:05:52 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 157.84 seconds
-[227268.277040] sd 2:0:0:0: [sda] tag#0 Medium access timeout failure. Offlining disk!
-[227268.512552] print_req_error: I/O error, dev sda, sector 6539264
-[227268.523649] sd 2:0:0:0: rejecting I/O to offline device
-[227268.532809] print_req_error: I/O error, dev sda, sector 6490112
-[227268.667945] sd 2:0:0:0: rejecting I/O to offline device
-[227268.681167] Buffer I/O error on device sda1, logical block 26569
-[227268.693804] Buffer I/O error on device sda1, logical block 26570
-[227268.781069] Buffer I/O error on device sda1, logical block 26571
-[227268.795800] Buffer I/O error on device sda1, logical block 26572
-[227268.811910] print_req_error: I/O error, dev sda, sector 6484480
-[227268.871870] sd 2:0:0:0: rejecting I/O to offline device
-[227268.883589] print_req_error: I/O error, dev sda, sector 6481920
-[227268.898292] Buffer I/O error on device sda1, logical block 809984
-[227268.962320] Buffer I/O error on device sda1, logical block 809985
-[227268.977580] Buffer I/O error on device sda1, logical block 809986
-[227268.992249] Buffer I/O error on device sda1, logical block 809987
-[227269.043209] Buffer I/O error on device sda1, logical block 809988
-[227269.062405] Buffer I/O error on device sda1, logical block 809989
-[227269.107355] sd 2:0:0:0: rejecting I/O to offline device
-[227269.125335] print_req_error: I/O error, dev sda, sector 6489840
-[227269.137562] print_req_error: I/O error, dev sda, sector 6489400
-[227269.169485] sd 2:0:0:0: rejecting I/O to offline device
-[227269.184456] print_req_error: I/O error, dev sda, sector 6488960
-[227269.198985] print_req_error: I/O error, dev sda, sector 6488520
-[227269.216582] sd 2:0:0:0: rejecting I/O to offline device
-[227269.229053] sd 2:0:0:0: rejecting I/O to offline device
-[227269.247527] sd 2:0:0:0: rejecting I/O to offline device
-[227269.262923] sd 2:0:0:0: rejecting I/O to offline device
-[227269.274583] print_req_error: I/O error, dev sda, sector 6486016
-[227269.295872] sd 2:0:0:0: rejecting I/O to offline device
-[227269.310920] sd 2:0:0:0: rejecting I/O to offline device
-[227269.327469] sd 2:0:0:0: rejecting I/O to offline device
-[227269.343249] sd 2:0:0:0: rejecting I/O to offline device
-[227269.361688] print_req_error: I/O error, dev sda, sector 6535168
-[227269.378114] sd 2:0:0:0: rejecting I/O to offline device
-[227269.419224] sd 2:0:0:0: rejecting I/O to offline device
-[227269.433814] sd 2:0:0:0: rejecting I/O to offline device
-[227269.460136] sd 2:0:0:0: rejecting I/O to offline device
-[227269.479692] sd 2:0:0:0: rejecting I/O to offline device
-[227269.489746] sd 2:0:0:0: rejecting I/O to offline device
-[227269.503717] sd 2:0:0:0: rejecting I/O to offline device
-[227269.518237] sd 2:0:0:0: rejecting I/O to offline device
-[227269.547739] sd 2:0:0:0: rejecting I/O to offline device
-[227269.559235] Aborting journal on device sda1-8.
-[227269.561637] sd 2:0:0:0: rejecting I/O to offline device
-[227269.561679] sd 2:0:0:0: rejecting I/O to offline device
-[227269.561728] sd 2:0:0:0: rejecting I/O to offline device
-[227269.561767] sd 2:0:0:0: rejecting I/O to offline device
-[227269.561834] sd 2:0:0:0: rejecting I/O to offline device
-[227269.561937] sd 2:0:0:0: rejecting I/O to offline device
-[227269.561982] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562020] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562269] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562319] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562391] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562428] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562570] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562621] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562668] sd 2:0:0:0: rejecting I/O to offline device
-[227269.562712] sd 2:0:0:0: rejecting I/O to offline device
-[227269.579832] sd 2:0:0:0: rejecting I/O to offline device
-[227269.786605] sd 2:0:0:0: rejecting I/O to offline device
-[227269.799099] sd 2:0:0:0: rejecting I/O to offline device
-[227269.809760] sd 2:0:0:0: rejecting I/O to offline device
-[227269.819025] sd 2:0:0:0: rejecting I/O to offline device
-[227269.830192] sd 2:0:0:0: rejecting I/O to offline device
-[227269.843041] sd 2:0:0:0: rejecting I/O to offline device
-[227269.859748] sd 2:0:0:0: rejecting I/O to offline device
-[227269.905260] sd 2:0:0:0: rejecting I/O to offline device
-[227269.921311] sd 2:0:0:0: rejecting I/O to offline device
-[227269.939213] sd 2:0:0:0: rejecting I/O to offline device
-[227269.968309] sd 2:0:0:0: rejecting I/O to offline device
-[227269.983237] sd 2:0:0:0: rejecting I/O to offline device
-[227269.997636] sd 2:0:0:0: rejecting I/O to offline device
-[227270.019451] sd 2:0:0:0: rejecting I/O to offline device
-[227270.035758] sd 2:0:0:0: rejecting I/O to offline device
-[227270.048199] sd 2:0:0:0: rejecting I/O to offline device
-[227270.070823] sd 2:0:0:0: rejecting I/O to offline device
-[227270.083108] sd 2:0:0:0: rejecting I/O to offline device
-[227270.097411] sd 2:0:0:0: rejecting I/O to offline device
-[227270.108614] sd 2:0:0:0: rejecting I/O to offline device
-[227270.119672] sd 2:0:0:0: rejecting I/O to offline device
-[227270.131980] sd 2:0:0:0: rejecting I/O to offline device
-[227270.144950] sd 2:0:0:0: rejecting I/O to offline device
-[227270.158120] sd 2:0:0:0: rejecting I/O to offline device
-[227270.168740] sd 2:0:0:0: rejecting I/O to offline device
-[227270.180229] sd 2:0:0:0: rejecting I/O to offline device
-[227270.190477] sd 2:0:0:0: rejecting I/O to offline device
-[227270.208199] sd 2:0:0:0: rejecting I/O to offline device
-[227270.223261] sd 2:0:0:0: rejecting I/O to offline device
-[227270.234244] sd 2:0:0:0: rejecting I/O to offline device
-[227270.247991] sd 2:0:0:0: rejecting I/O to offline device
-[227270.259962] sd 2:0:0:0: rejecting I/O to offline device
-[227270.270799] sd 2:0:0:0: rejecting I/O to offline device
-[227270.280669] sd 2:0:0:0: rejecting I/O to offline device
-[227270.294853] sd 2:0:0:0: rejecting I/O to offline device
-[227270.309162] sd 2:0:0:0: rejecting I/O to offline device
-[227270.322651] sd 2:0:0:0: rejecting I/O to offline device
-[227270.333071] sd 2:0:0:0: rejecting I/O to offline device
-[227270.344453] sd 2:0:0:0: rejecting I/O to offline device
-[227270.362351] sd 2:0:0:0: rejecting I/O to offline device
-[227270.372468] sd 2:0:0:0: rejecting I/O to offline device
-[227270.387966] sd 2:0:0:0: rejecting I/O to offline device
-[227270.402184] sd 2:0:0:0: rejecting I/O to offline device
-[227270.414254] sd 2:0:0:0: rejecting I/O to offline device
-[227270.425217] sd 2:0:0:0: rejecting I/O to offline device
-[227270.436778] sd 2:0:0:0: rejecting I/O to offline device
-[227270.453960] sd 2:0:0:0: rejecting I/O to offline device
-[227270.468098] sd 2:0:0:0: rejecting I/O to offline device
-[227270.483281] sd 2:0:0:0: rejecting I/O to offline device
-[227270.502538] sd 2:0:0:0: rejecting I/O to offline device
-[227270.518119] sd 2:0:0:0: rejecting I/O to offline device
-[227270.532358] sd 2:0:0:0: rejecting I/O to offline device
-[227270.543155] sd 2:0:0:0: rejecting I/O to offline device
-[227270.553796] sd 2:0:0:0: rejecting I/O to offline device
-[227270.564245] sd 2:0:0:0: rejecting I/O to offline device
-[227270.575799] sd 2:0:0:0: rejecting I/O to offline device
-[227270.587521] sd 2:0:0:0: rejecting I/O to offline device
-[227270.597619] sd 2:0:0:0: rejecting I/O to offline device
-[227270.611359] sd 2:0:0:0: rejecting I/O to offline device
-[227270.623249] sd 2:0:0:0: rejecting I/O to offline device
-[227270.636709] sd 2:0:0:0: rejecting I/O to offline device
-[227270.650479] sd 2:0:0:0: rejecting I/O to offline device
-[227270.670104] sd 2:0:0:0: rejecting I/O to offline device
-[227270.683884] sd 2:0:0:0: rejecting I/O to offline device
-[227270.694781] sd 2:0:0:0: rejecting I/O to offline device
-[227270.708607] sd 2:0:0:0: rejecting I/O to offline device
-[227270.719237] sd 2:0:0:0: rejecting I/O to offline device
-[227270.732817] sd 2:0:0:0: rejecting I/O to offline device
-[227270.746026] sd 2:0:0:0: rejecting I/O to offline device
-[227270.761436] sd 2:0:0:0: rejecting I/O to offline device
-[227270.772780] sd 2:0:0:0: rejecting I/O to offline device
-[227270.786870] sd 2:0:0:0: rejecting I/O to offline device
-[227270.797819] sd 2:0:0:0: rejecting I/O to offline device
-[227270.820425] sd 2:0:0:0: rejecting I/O to offline device
-[227270.831172] sd 2:0:0:0: rejecting I/O to offline device
-[227270.846078] sd 2:0:0:0: rejecting I/O to offline device
-[227270.864606] sd 2:0:0:0: rejecting I/O to offline device
-[227270.878061] sd 2:0:0:0: rejecting I/O to offline device
-[227270.904282] sd 2:0:0:0: rejecting I/O to offline device
-[227270.915002] sd 2:0:0:0: rejecting I/O to offline device
-[227270.926098] sd 2:0:0:0: rejecting I/O to offline device
-[227270.953514] sd 2:0:0:0: rejecting I/O to offline device
-[227270.969016] JBD2: Error -5 detected when updating journal superblock for sda1-8.
-[227270.990641] sd 2:0:0:0: rejecting I/O to offline device
-[227271.016162] EXT4-fs (sda1): previous I/O error to superblock detected
-[227271.041044] EXT4-fs error (device sda1): ext4_journal_check_start:61: Detected aborted journal
-[227271.041292] sd 2:0:0:0: rejecting I/O to offline device
-[227271.069519] EXT4-fs (sda1): Remounting filesystem read-only
-[227271.082242] EXT4-fs error (device sda1): ext4_journal_check_start:61: Detected aborted journal
-[227271.119804] EXT4-fs (sda1): ext4_writepages: jbd2_start: 3069 pages, ino 6793; err -30
-[227271.157682] EXT4-fs (sda1): previous I/O error to superblock detected
-[227271.178469] sd 2:0:0:0: rejecting I/O to offline device
-[227285.668273] sd 2:0:0:0: rejecting I/O to offline device
-[227285.697240] sd 2:0:0:0: rejecting I/O to offline device
-[227285.729423] sd 2:0:0:0: rejecting I/O to offline device
-[227285.754546] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #10600: comm unattended-upgr: reading directory lblock 0
-[227285.807649] EXT4-fs (sda1): previous I/O error to superblock detected
-[227285.867411] sd 2:0:0:0: rejecting I/O to offline device
-[227285.882008] sd 2:0:0:0: rejecting I/O to offline device
-[227285.903580] sd 2:0:0:0: rejecting I/O to offline device
-[227285.972815] sd 2:0:0:0: rejecting I/O to offline device
-[227285.995637] sd 2:0:0:0: rejecting I/O to offline device
-[227286.017529] sd 2:0:0:0: rejecting I/O to offline device
-[227286.029418] sd 2:0:0:0: rejecting I/O to offline device
-[257348.667798] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[257348.740686] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[257348.761514] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[257348.785264] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[257348.807399] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[257348.831086] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[257348.850434] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[257348.870359] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[257348.890336] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[257348.910172] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[259272.989684] systemd-journald[393]: Failed to write entry (25 items, 694 bytes), ignoring: Read-only file system
-[259273.013729] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[259273.033761] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[259273.051659] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[259273.071443] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[259273.101300] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[259273.121072] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[259273.141070] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[259273.159610] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[259273.179340] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260327.178514] systemd-journald[393]: Failed to write entry (26 items, 693 bytes), ignoring: Read-only file system
-[260327.205847] sd 2:0:0:0: rejecting I/O to offline device
-[260327.222246] sd 2:0:0:0: rejecting I/O to offline device
-[260327.241057] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[260327.272241] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[260327.314786] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260327.337157] systemd-journald[393]: Failed to write entry (27 items, 697 bytes), ignoring: Read-only file system
-[260327.357597] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[260327.377278] systemd-journald[393]: Failed to write entry (24 items, 598 bytes), ignoring: Read-only file system
-[260327.406466] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260327.430523] systemd-journald[393]: Failed to write entry (28 items, 706 bytes), ignoring: Read-only file system
-[260327.453686] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260707.021136] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[260707.045781] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260707.067849] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260707.089988] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260707.112086] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260707.133143] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260707.155603] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260707.177359] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[260707.199172] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260707.223603] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260946.933243] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[260946.957190] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260946.976462] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[260946.999059] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260947.021264] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260947.044690] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260947.064367] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260947.087063] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[260947.108317] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[260947.132611] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[264546.848171] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[264546.872906] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[264546.893390] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[264546.927108] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[264546.949280] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[264546.976933] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[264546.998564] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[264547.022629] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[264547.044909] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[264547.063967] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[268148.818896] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[268148.841082] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[268148.861168] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[268148.881159] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[268148.900698] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[268148.920545] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[268148.940784] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[268148.960642] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[268148.979340] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[268148.998927] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[271748.123662] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[271748.145654] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[271748.165205] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[271748.184350] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[271748.204603] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[271748.225595] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[271748.246627] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[271748.265995] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[271748.286018] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[271748.306756] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[275345.560722] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[275345.587751] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[275345.610690] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[275345.637289] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[275345.657948] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[275345.681100] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[275345.699487] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[275345.721024] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[275345.741521] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[275345.761385] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[278944.039934] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[278944.066963] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[278944.088004] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[278944.109370] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[278944.134673] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[278944.158616] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[278944.182251] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[278944.204445] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[278944.227617] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[278944.247783] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[280134.111599] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
-[280134.563181] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
-[280134.682277] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[280134.801687] systemd-journald[393]: Failed to write entry (26 items, 677 bytes), ignoring: Read-only file system
-[280134.889607] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[280134.963279] systemd-journald[393]: Failed to write entry (27 items, 672 bytes), ignoring: Read-only file system
-[280135.065000] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[280135.339581] systemd-journald[393]: Failed to write entry (24 items, 575 bytes), ignoring: Read-only file system
-[280135.399974] systemd-journald[393]: Failed to write entry (13 items, 377 bytes), ignoring: Read-only file system
-[280135.462716] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[280144.942168] systemd-journald[393]: Failed to write entry (9 items, 419 bytes), ignoring: Read-only file system
-[280145.037674] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[280145.140819] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[280145.239564] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[280145.344732] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[280145.379374] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[280145.520483] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[280145.631624] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[280145.681333] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[280145.814856] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[281045.648608] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
-[281045.730710] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[281045.849371] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[281046.068886] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
-[281046.354536] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[281047.055524] systemd-journald[393]: Failed to write entry (26 items, 677 bytes), ignoring: Read-only file system
-[281047.264172] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[281047.352334] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
-[281047.723587] systemd-journald[393]: Failed to write entry (13 items, 377 bytes), ignoring: Read-only file system
-[281047.838259] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[281050.845180] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[281050.903860] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[281050.960647] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[281051.054289] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[281051.096186] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[281051.131794] systemd-journald[393]: Failed to write entry (19 items, 624 bytes), ignoring: Read-only file system
-[281051.177984] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[281051.210921] systemd-journald[393]: Failed to write entry (27 items, 680 bytes), ignoring: Read-only file system
-[281051.239041] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[281051.288087] systemd-journald[393]: Failed to write entry (24 items, 575 bytes), ignoring: Read-only file system
-[282596.003022] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
-[282596.456213] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[282596.514479] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[282596.561889] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
-[282596.595611] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[282596.647301] systemd-journald[393]: Failed to write entry (26 items, 677 bytes), ignoring: Read-only file system
-[282596.723728] systemd-journald[393]: Failed to write entry (13 items, 377 bytes), ignoring: Read-only file system
-[282597.542022] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[282597.579699] systemd-journald[393]: Failed to write entry (27 items, 672 bytes), ignoring: Read-only file system
-[282597.616077] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[282606.022945] systemd-journald[393]: Failed to write entry (9 items, 419 bytes), ignoring: Read-only file system
-[282606.047833] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[282606.269676] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[282606.290708] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[282606.357134] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[282606.378186] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[282606.398624] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[282606.418907] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[282606.438492] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[282606.463024] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283237.441074] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[283237.462049] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283237.484863] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283237.507602] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[283237.598143] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283237.620465] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283237.641247] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283237.663591] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283237.684534] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283237.710051] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283926.188907] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
-[283926.360691] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283926.672050] systemd-journald[393]: Failed to write entry (26 items, 694 bytes), ignoring: Read-only file system
-[283926.881996] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283926.946115] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283927.019138] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[283927.119429] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283927.263616] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283927.312240] systemd-journald[393]: Failed to write entry (19 items, 640 bytes), ignoring: Read-only file system
-[283927.782107] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283936.614313] systemd-journald[393]: Failed to write entry (9 items, 419 bytes), ignoring: Read-only file system
-[283936.745331] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283936.872132] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283936.924094] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283937.018650] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283937.054118] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283937.092801] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[283937.122602] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[283937.154390] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[283937.190317] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284757.448545] systemd-journald[393]: Failed to write entry (9 items, 393 bytes), ignoring: Read-only file system
-[284757.929512] systemd-journald[393]: Failed to write entry (26 items, 666 bytes), ignoring: Read-only file system
-[284758.173013] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284759.241077] systemd-journald[393]: Failed to write entry (26 items, 677 bytes), ignoring: Read-only file system
-[284759.559040] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284760.383644] systemd-journald[393]: Failed to write entry (27 items, 672 bytes), ignoring: Read-only file system
-[284760.910380] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284761.303248] systemd-journald[393]: Failed to write entry (13 items, 377 bytes), ignoring: Read-only file system
-[284761.336463] systemd-journald[393]: Failed to write entry (24 items, 575 bytes), ignoring: Read-only file system
-[284761.493710] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284762.633384] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284762.906855] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284763.002707] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284763.045542] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284763.087731] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284763.133632] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284763.311449] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284763.547828] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284763.626583] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284763.678437] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284997.690451] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[284997.711931] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284997.734594] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[284997.755258] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284997.775770] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284997.795282] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284997.815693] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284997.841174] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[284997.863643] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[284997.884313] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[288596.095967] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[288596.131936] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[288596.160670] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[288596.188851] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[288596.209837] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[288596.237662] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[288596.263779] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[288596.288123] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[288596.310411] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[288596.331762] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[289411.510843] sd 2:0:0:0: rejecting I/O to offline device
-[289411.542097] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[289411.585187] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[289411.593299] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[289411.603723] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289411.624432] EXT4-fs (sda1): previous I/O error to superblock detected
-[289411.653416] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[289411.682434] sd 2:0:0:0: rejecting I/O to offline device
-[289411.713671] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[289411.797168] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[289411.833147] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289411.862755] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[289411.890100] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[289411.916663] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289600.675080] sd 2:0:0:0: rejecting I/O to offline device
-[289600.687868] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[289600.691277] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[289600.714408] EXT4-fs (sda1): previous I/O error to superblock detected
-[289600.752850] sd 2:0:0:0: rejecting I/O to offline device
-[289600.767634] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[289600.790767] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[289600.818793] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[289600.845638] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289600.869362] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[289600.897171] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289600.942398] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[289600.966697] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289600.996880] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[289733.283612] sd 2:0:0:0: rejecting I/O to offline device
-[289733.302023] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[289733.305480] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[289733.341484] EXT4-fs (sda1): previous I/O error to superblock detected
-[289733.341570] sd 2:0:0:0: rejecting I/O to offline device
-[289733.450488] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[289733.491604] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[289733.520924] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[289733.553182] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289733.577404] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[289733.623770] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289733.657406] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[289733.688121] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[289733.709814] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[290348.449964] sd 2:0:0:0: rejecting I/O to offline device
-[290348.466890] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[290348.475656] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[290348.504291] EXT4-fs (sda1): previous I/O error to superblock detected
-[290348.542364] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[290348.543255] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[290348.591181] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[290348.635081] sd 2:0:0:0: rejecting I/O to offline device
-[290348.756964] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[290348.789511] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[290348.853627] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[290348.887295] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[290348.938733] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[290348.977504] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[290616.921533] sd 2:0:0:0: rejecting I/O to offline device
-[290616.936177] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[290616.940384] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[290616.968138] EXT4-fs (sda1): previous I/O error to superblock detected
-[290616.968224] sd 2:0:0:0: rejecting I/O to offline device
-[290617.034921] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[290617.076815] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[290617.103049] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[290617.138940] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[290617.166554] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[290617.194790] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[290617.217684] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[290617.240318] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[290617.263121] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291112.664111] sd 2:0:0:0: rejecting I/O to offline device
-[291112.679928] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[291112.680669] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[291112.704697] EXT4-fs (sda1): previous I/O error to superblock detected
-[291112.704869] sd 2:0:0:0: rejecting I/O to offline device
-[291112.742019] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[291112.804642] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[291112.834455] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[291112.866028] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291112.893948] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[291112.929599] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[291112.954896] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291112.983878] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[291113.012396] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291272.197191] sd 2:0:0:0: rejecting I/O to offline device
-[291272.213651] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[291272.216286] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[291272.235174] EXT4-fs (sda1): previous I/O error to superblock detected
-[291272.270479] sd 2:0:0:0: rejecting I/O to offline device
-[291272.286572] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[291272.310395] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[291272.340155] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[291272.384890] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291272.421292] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[291272.449647] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[291272.474501] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291272.502094] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[291272.528626] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291607.954952] sd 2:0:0:0: rejecting I/O to offline device
-[291607.994394] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[291608.020617] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[291608.048652] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291608.080694] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[291608.084186] EXT4-fs (sda1): previous I/O error to superblock detected
-[291608.128586] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[291608.171113] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[291608.203268] sd 2:0:0:0: rejecting I/O to offline device
-[291608.208369] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[291608.254704] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[291608.282378] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[291608.302856] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[291608.334734] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[292194.070879] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[292194.092240] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[292194.113835] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[292194.133815] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[292194.152004] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[292194.171498] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[292194.192984] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[292194.213344] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[292194.231782] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[292194.251025] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[295792.510755] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[295792.578239] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[295792.603878] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[295792.625870] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[295792.648593] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[295792.669537] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[295792.692818] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[295792.713972] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[295792.737266] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[295792.757564] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[299391.175867] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[299391.199640] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[299391.220719] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[299391.243798] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[299391.265947] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[299391.291202] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[299391.309254] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[299391.330911] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[299391.350957] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[299391.370302] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[299870.950908] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[299870.972643] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[299870.995514] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[299871.017141] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[299871.037760] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[299871.057859] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[299871.078403] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[299871.096888] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[299871.118927] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[299871.138593] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[301115.013100] systemd-journald[393]: Failed to write entry (26 items, 694 bytes), ignoring: Read-only file system
-[301115.040584] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[301115.082971] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[301115.108899] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[301115.156966] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[301115.193937] systemd-journald[393]: Failed to write entry (27 items, 696 bytes), ignoring: Read-only file system
-[301115.215638] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[301115.242034] systemd-journald[393]: Failed to write entry (13 items, 429 bytes), ignoring: Read-only file system
-[301115.265355] systemd-journald[393]: Failed to write entry (24 items, 591 bytes), ignoring: Read-only file system
-[301115.285710] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302459.423631] systemd-journald[393]: Failed to write entry (25 items, 694 bytes), ignoring: Read-only file system
-[302459.454562] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302459.473301] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[302459.493883] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[302459.516058] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302459.538365] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[302459.565039] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302459.585249] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[302459.603424] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302459.622898] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[302989.502878] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[302989.525438] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302989.547913] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[302989.581241] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[302989.604508] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302989.624435] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[302989.645632] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302989.666015] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[302989.688887] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[302989.712099] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[306587.271717] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[306587.295968] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[306587.319438] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[306587.338470] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[306587.358605] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[306587.376210] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[306587.396454] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[306587.415601] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[306587.437199] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[306587.459347] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[310185.588579] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[310185.613652] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[310185.635285] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[310185.654862] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[310185.675865] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[310185.695905] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[310185.715325] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[310185.735285] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[310185.754568] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[310185.773782] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[313785.736934] systemd-journald[393]: Failed to write entry (22 items, 550 bytes), ignoring: Read-only file system
-[313785.759932] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[313785.780517] systemd-journald[393]: Failed to write entry (21 items, 586 bytes), ignoring: Read-only file system
-[313785.798501] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[313785.817954] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[313785.837414] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[313785.855557] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[313785.874995] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[313785.894321] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[313785.914160] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[317384.865928] systemd-journald[393]: Failed to write entry (20 items, 505 bytes), ignoring: Read-only file system
-[317384.887512] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[317384.908846] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[317384.928916] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[317384.948928] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[317384.969841] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[317384.988693] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[317385.012035] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[317385.034007] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[317385.053202] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[319038.378113] systemd-journald[393]: Failed to write entry (9 items, 271 bytes), ignoring: Read-only file system
-[319038.400340] systemd-journald[393]: Failed to write entry (9 items, 301 bytes), ignoring: Read-only file system
-[319038.419982] systemd-journald[393]: Failed to write entry (9 items, 305 bytes), ignoring: Read-only file system
-[319038.445115] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[319038.468165] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[319038.490138] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[319038.508242] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[319038.528435] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[319038.548272] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[319038.569687] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[320983.175173] systemd-journald[393]: Failed to write entry (20 items, 505 bytes), ignoring: Read-only file system
-[320983.217060] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[320983.240543] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[320983.260419] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[320983.279214] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[320983.300761] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[320983.319392] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[320983.338626] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[320983.356406] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[320983.375205] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[322312.539510] sd 2:0:0:0: rejecting I/O to offline device
-[322312.611049] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322312.635368] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322312.646128] EXT4-fs (sda1): previous I/O error to superblock detected
-[322312.709926] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322312.710406] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322312.721298] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[322312.722182] systemd-journald[393]: Failed to write entry (21 items, 587 bytes), ignoring: Read-only file system
-[322312.722620] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[322312.723113] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[322312.723855] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[322312.724262] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[322312.724695] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[322313.158830] sd 2:0:0:0: rejecting I/O to offline device
-[322313.176229] sd 2:0:0:0: rejecting I/O to offline device
-[322313.190056] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322313.213060] EXT4-fs (sda1): previous I/O error to superblock detected
-[322313.247284] sd 2:0:0:0: rejecting I/O to offline device
-[322313.261260] sd 2:0:0:0: rejecting I/O to offline device
-[322313.280846] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322313.305353] EXT4-fs (sda1): previous I/O error to superblock detected
-[322313.322946] sd 2:0:0:0: rejecting I/O to offline device
-[322313.337384] sd 2:0:0:0: rejecting I/O to offline device
-[322313.351375] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322313.374096] EXT4-fs (sda1): previous I/O error to superblock detected
-[322313.394809] sd 2:0:0:0: rejecting I/O to offline device
-[322321.483532] sd 2:0:0:0: rejecting I/O to offline device
-[322321.494309] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322321.497900] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322321.519604] EXT4-fs (sda1): previous I/O error to superblock detected
-[322321.576011] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322321.576401] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322321.580276] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[322321.609806] sd 2:0:0:0: rejecting I/O to offline device
-[322321.639765] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322321.667101] sd 2:0:0:0: rejecting I/O to offline device
-[322321.688470] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322321.698614] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322321.727064] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322321.738685] EXT4-fs (sda1): previous I/O error to superblock detected
-[322321.769825] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322321.794794] sd 2:0:0:0: rejecting I/O to offline device
-[322321.820376] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322321.839856] sd 2:0:0:0: rejecting I/O to offline device
-[322321.877756] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322321.891464] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322321.978674] EXT4-fs (sda1): previous I/O error to superblock detected
-[322321.999510] sd 2:0:0:0: rejecting I/O to offline device
-[322322.017423] sd 2:0:0:0: rejecting I/O to offline device
-[322322.028545] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322322.052200] EXT4-fs (sda1): previous I/O error to superblock detected
-[322322.066083] sd 2:0:0:0: rejecting I/O to offline device
-[322329.116307] sd 2:0:0:0: rejecting I/O to offline device
-[322329.127151] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322329.128608] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322329.151105] EXT4-fs (sda1): previous I/O error to superblock detected
-[322329.178745] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322329.192170] sd 2:0:0:0: rejecting I/O to offline device
-[322329.229517] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322329.253744] sd 2:0:0:0: rejecting I/O to offline device
-[322329.274325] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322329.281156] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322329.312051] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322329.330847] EXT4-fs (sda1): previous I/O error to superblock detected
-[322329.330921] sd 2:0:0:0: rejecting I/O to offline device
-[322329.332439] sd 2:0:0:0: rejecting I/O to offline device
-[322329.332603] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322329.332622] EXT4-fs (sda1): previous I/O error to superblock detected
-[322329.332662] sd 2:0:0:0: rejecting I/O to offline device
-[322329.336704] sd 2:0:0:0: rejecting I/O to offline device
-[322329.336796] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322329.336816] EXT4-fs (sda1): previous I/O error to superblock detected
-[322329.336854] sd 2:0:0:0: rejecting I/O to offline device
-[322329.566399] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322329.604486] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322329.652622] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322329.697161] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322329.743657] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322336.124206] sd 2:0:0:0: rejecting I/O to offline device
-[322336.136958] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322336.142705] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322336.158210] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322336.190244] EXT4-fs (sda1): previous I/O error to superblock detected
-[322336.219722] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322336.230825] sd 2:0:0:0: rejecting I/O to offline device
-[322336.254895] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322336.273087] sd 2:0:0:0: rejecting I/O to offline device
-[322336.301328] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322336.308762] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322336.344844] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322336.376823] EXT4-fs (sda1): previous I/O error to superblock detected
-[322336.395808] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322336.407200] sd 2:0:0:0: rejecting I/O to offline device
-[322336.428585] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322336.437690] sd 2:0:0:0: rejecting I/O to offline device
-[322336.460806] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322336.469052] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322336.491220] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322336.509921] EXT4-fs (sda1): previous I/O error to superblock detected
-[322336.544924] sd 2:0:0:0: rejecting I/O to offline device
-[322336.566507] sd 2:0:0:0: rejecting I/O to offline device
-[322336.600906] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322336.634272] EXT4-fs (sda1): previous I/O error to superblock detected
-[322336.652517] sd 2:0:0:0: rejecting I/O to offline device
-[322343.083321] sd 2:0:0:0: rejecting I/O to offline device
-[322343.095565] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322343.097209] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322343.116454] EXT4-fs (sda1): previous I/O error to superblock detected
-[322343.141039] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322343.163261] sd 2:0:0:0: rejecting I/O to offline device
-[322343.190202] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322343.211876] sd 2:0:0:0: rejecting I/O to offline device
-[322343.240193] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322343.242163] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322343.274823] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322343.289440] EXT4-fs (sda1): previous I/O error to superblock detected
-[322343.313728] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322343.325974] sd 2:0:0:0: rejecting I/O to offline device
-[322343.349392] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322343.365268] sd 2:0:0:0: rejecting I/O to offline device
-[322343.398464] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322343.405456] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322343.441601] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322343.480161] EXT4-fs (sda1): previous I/O error to superblock detected
-[322343.480247] sd 2:0:0:0: rejecting I/O to offline device
-[322343.508052] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322343.530664] sd 2:0:0:0: rejecting I/O to offline device
-[322343.602692] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322343.623284] EXT4-fs (sda1): previous I/O error to superblock detected
-[322343.640853] sd 2:0:0:0: rejecting I/O to offline device
-[322350.901364] sd 2:0:0:0: rejecting I/O to offline device
-[322350.912244] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322350.912817] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322350.930840] EXT4-fs (sda1): previous I/O error to superblock detected
-[322350.930922] sd 2:0:0:0: rejecting I/O to offline device
-[322350.943045] sd 2:0:0:0: rejecting I/O to offline device
-[322350.950104] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322350.967252] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322350.973856] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322350.986120] EXT4-fs (sda1): previous I/O error to superblock detected
-[322351.003639] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322351.024482] sd 2:0:0:0: rejecting I/O to offline device
-[322351.045094] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322351.062205] sd 2:0:0:0: rejecting I/O to offline device
-[322351.083824] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322351.100723] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322351.119285] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322351.136660] EXT4-fs (sda1): previous I/O error to superblock detected
-[322351.152800] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322351.173440] sd 2:0:0:0: rejecting I/O to offline device
-[322351.193430] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322351.214970] sd 2:0:0:0: rejecting I/O to offline device
-[322351.228305] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322351.241755] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322351.314514] EXT4-fs (sda1): previous I/O error to superblock detected
-[322351.334447] sd 2:0:0:0: rejecting I/O to offline device
-[322374.490836] sd 2:0:0:0: rejecting I/O to offline device
-[322374.503215] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322374.503899] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322374.526198] EXT4-fs (sda1): previous I/O error to superblock detected
-[322374.581197] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322374.628859] sd 2:0:0:0: rejecting I/O to offline device
-[322374.669163] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322374.711833] sd 2:0:0:0: rejecting I/O to offline device
-[322374.733644] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322374.776361] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322374.776387] EXT4-fs (sda1): previous I/O error to superblock detected
-[322374.776455] sd 2:0:0:0: rejecting I/O to offline device
-[322374.778088] sd 2:0:0:0: rejecting I/O to offline device
-[322374.778173] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322374.778191] EXT4-fs (sda1): previous I/O error to superblock detected
-[322374.778231] sd 2:0:0:0: rejecting I/O to offline device
-[322374.789913] sd 2:0:0:0: rejecting I/O to offline device
-[322374.817355] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322374.818462] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322374.819486] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322374.855267] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322374.877393] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322374.916496] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322374.927898] EXT4-fs (sda1): previous I/O error to superblock detected
-[322374.954157] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322375.253840] sd 2:0:0:0: rejecting I/O to offline device
-[322395.506521] sd 2:0:0:0: rejecting I/O to offline device
-[322395.521578] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322395.541762] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322395.544878] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322395.570002] EXT4-fs (sda1): previous I/O error to superblock detected
-[322395.597570] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322395.607136] sd 2:0:0:0: rejecting I/O to offline device
-[322395.633847] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322395.643606] sd 2:0:0:0: rejecting I/O to offline device
-[322395.659967] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322395.666369] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322395.689025] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322395.708524] EXT4-fs (sda1): previous I/O error to superblock detected
-[322395.740687] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322395.759365] sd 2:0:0:0: rejecting I/O to offline device
-[322395.781857] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322395.789146] sd 2:0:0:0: rejecting I/O to offline device
-[322395.810637] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322395.817937] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322395.836630] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322395.855919] EXT4-fs (sda1): previous I/O error to superblock detected
-[322395.889377] sd 2:0:0:0: rejecting I/O to offline device
-[322395.910240] sd 2:0:0:0: rejecting I/O to offline device
-[322395.926477] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322395.949982] EXT4-fs (sda1): previous I/O error to superblock detected
-[322395.965906] sd 2:0:0:0: rejecting I/O to offline device
-[322401.557549] sd 2:0:0:0: rejecting I/O to offline device
-[322401.568285] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322401.571223] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322401.590292] EXT4-fs (sda1): previous I/O error to superblock detected
-[322401.611271] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322401.623510] sd 2:0:0:0: rejecting I/O to offline device
-[322401.649560] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322401.657515] sd 2:0:0:0: rejecting I/O to offline device
-[322401.679971] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322401.684794] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322401.710957] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322401.724533] EXT4-fs (sda1): previous I/O error to superblock detected
-[322401.742221] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322401.754318] sd 2:0:0:0: rejecting I/O to offline device
-[322401.779060] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322401.784816] sd 2:0:0:0: rejecting I/O to offline device
-[322401.810002] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322401.813558] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322401.839910] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322401.850659] EXT4-fs (sda1): previous I/O error to superblock detected
-[322401.850718] sd 2:0:0:0: rejecting I/O to offline device
-[322401.869770] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322401.888600] sd 2:0:0:0: rejecting I/O to offline device
-[322401.921319] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322401.940989] EXT4-fs (sda1): previous I/O error to superblock detected
-[322401.954604] sd 2:0:0:0: rejecting I/O to offline device
-[322407.456433] sd 2:0:0:0: rejecting I/O to offline device
-[322407.467154] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322407.469560] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322407.486016] EXT4-fs (sda1): previous I/O error to superblock detected
-[322407.509129] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322407.521225] sd 2:0:0:0: rejecting I/O to offline device
-[322407.551799] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322407.574738] sd 2:0:0:0: rejecting I/O to offline device
-[322407.596832] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322407.604263] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322407.625910] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322407.644408] EXT4-fs (sda1): previous I/O error to superblock detected
-[322407.664042] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322407.677088] sd 2:0:0:0: rejecting I/O to offline device
-[322407.697620] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322407.707403] sd 2:0:0:0: rejecting I/O to offline device
-[322407.730385] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322407.735807] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322407.758260] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322407.776711] EXT4-fs (sda1): previous I/O error to superblock detected
-[322407.797592] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322407.808546] sd 2:0:0:0: rejecting I/O to offline device
-[322407.849780] sd 2:0:0:0: rejecting I/O to offline device
-[322407.864469] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322407.893639] EXT4-fs (sda1): previous I/O error to superblock detected
-[322407.909065] sd 2:0:0:0: rejecting I/O to offline device
-[322413.407444] sd 2:0:0:0: rejecting I/O to offline device
-[322413.417227] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322413.420469] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322413.441349] EXT4-fs (sda1): previous I/O error to superblock detected
-[322413.462562] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322413.476128] sd 2:0:0:0: rejecting I/O to offline device
-[322413.492235] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322413.519792] sd 2:0:0:0: rejecting I/O to offline device
-[322413.526598] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322413.537311] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322413.566284] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322413.589902] EXT4-fs (sda1): previous I/O error to superblock detected
-[322413.614961] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322413.627114] sd 2:0:0:0: rejecting I/O to offline device
-[322413.648538] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322413.659635] sd 2:0:0:0: rejecting I/O to offline device
-[322413.679695] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322413.685654] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322413.708711] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322413.728338] EXT4-fs (sda1): previous I/O error to superblock detected
-[322413.758075] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322413.780454] sd 2:0:0:0: rejecting I/O to offline device
-[322413.816946] sd 2:0:0:0: rejecting I/O to offline device
-[322413.833174] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322413.855894] EXT4-fs (sda1): previous I/O error to superblock detected
-[322413.871419] sd 2:0:0:0: rejecting I/O to offline device
-[322985.497456] sd 2:0:0:0: rejecting I/O to offline device
-[322985.536583] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322985.539930] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322985.606510] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322985.610175] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[322985.638541] EXT4-fs (sda1): previous I/O error to superblock detected
-[322985.638626] sd 2:0:0:0: rejecting I/O to offline device
-[322985.665902] sd 2:0:0:0: rejecting I/O to offline device
-[322985.680456] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322985.714555] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322985.731062] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322985.746527] EXT4-fs (sda1): previous I/O error to superblock detected
-[322985.746682] sd 2:0:0:0: rejecting I/O to offline device
-[322985.748465] sd 2:0:0:0: rejecting I/O to offline device
-[322985.774446] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322985.813185] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322985.838033] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322985.838493] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322985.841803] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322985.861704] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322985.876957] EXT4-fs (sda1): previous I/O error to superblock detected
-[322986.182241] sd 2:0:0:0: rejecting I/O to offline device
-[322986.199204] sd 2:0:0:0: rejecting I/O to offline device
-[322986.218493] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322986.245084] EXT4-fs (sda1): previous I/O error to superblock detected
-[322986.271315] sd 2:0:0:0: rejecting I/O to offline device
-[322992.838610] sd 2:0:0:0: rejecting I/O to offline device
-[322992.848850] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322992.852590] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322992.867455] EXT4-fs (sda1): previous I/O error to superblock detected
-[322992.867509] sd 2:0:0:0: rejecting I/O to offline device
-[322992.873448] sd 2:0:0:0: rejecting I/O to offline device
-[322992.897155] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322992.899379] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322992.912517] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322992.920458] EXT4-fs (sda1): previous I/O error to superblock detected
-[322992.947372] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322992.958380] sd 2:0:0:0: rejecting I/O to offline device
-[322992.980436] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322992.992073] sd 2:0:0:0: rejecting I/O to offline device
-[322993.015796] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322993.023477] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322993.046494] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322993.051638] EXT4-fs (sda1): previous I/O error to superblock detected
-[322993.077858] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322993.089595] sd 2:0:0:0: rejecting I/O to offline device
-[322993.114341] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322993.125158] sd 2:0:0:0: rejecting I/O to offline device
-[322993.145520] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322993.151074] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322993.221956] EXT4-fs (sda1): previous I/O error to superblock detected
-[322993.234961] sd 2:0:0:0: rejecting I/O to offline device
-[322999.111972] sd 2:0:0:0: rejecting I/O to offline device
-[322999.126345] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322999.127297] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322999.148988] EXT4-fs (sda1): previous I/O error to superblock detected
-[322999.177870] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322999.223512] sd 2:0:0:0: rejecting I/O to offline device
-[322999.245615] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322999.269173] sd 2:0:0:0: rejecting I/O to offline device
-[322999.300394] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322999.310006] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322999.339657] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322999.362502] EXT4-fs (sda1): previous I/O error to superblock detected
-[322999.389465] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322999.406554] sd 2:0:0:0: rejecting I/O to offline device
-[322999.433691] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[322999.451596] sd 2:0:0:0: rejecting I/O to offline device
-[322999.475626] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322999.483208] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322999.511704] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[322999.548988] EXT4-fs (sda1): previous I/O error to superblock detected
-[322999.549071] sd 2:0:0:0: rejecting I/O to offline device
-[322999.553762] sd 2:0:0:0: rejecting I/O to offline device
-[322999.584873] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[322999.599976] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[322999.600001] EXT4-fs (sda1): previous I/O error to superblock detected
-[322999.600066] sd 2:0:0:0: rejecting I/O to offline device
-[323005.759138] sd 2:0:0:0: rejecting I/O to offline device
-[323005.769839] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323005.772813] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323005.789991] EXT4-fs (sda1): previous I/O error to superblock detected
-[323005.810330] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323005.820105] sd 2:0:0:0: rejecting I/O to offline device
-[323005.844435] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323005.856321] sd 2:0:0:0: rejecting I/O to offline device
-[323005.875898] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323005.880617] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323005.903872] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323005.916878] EXT4-fs (sda1): previous I/O error to superblock detected
-[323005.935619] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323005.947222] sd 2:0:0:0: rejecting I/O to offline device
-[323005.968896] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323005.977079] sd 2:0:0:0: rejecting I/O to offline device
-[323006.002483] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323006.005526] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323006.005545] EXT4-fs (sda1): previous I/O error to superblock detected
-[323006.005589] sd 2:0:0:0: rejecting I/O to offline device
-[323006.010196] sd 2:0:0:0: rejecting I/O to offline device
-[323006.029925] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323006.045936] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323006.060508] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323006.067021] EXT4-fs (sda1): previous I/O error to superblock detected
-[323006.067069] sd 2:0:0:0: rejecting I/O to offline device
-[323011.810854] sd 2:0:0:0: rejecting I/O to offline device
-[323011.822045] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323011.824424] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323011.843502] EXT4-fs (sda1): previous I/O error to superblock detected
-[323011.843577] sd 2:0:0:0: rejecting I/O to offline device
-[323011.852989] sd 2:0:0:0: rejecting I/O to offline device
-[323011.863753] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323011.877218] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323011.894773] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323011.899425] EXT4-fs (sda1): previous I/O error to superblock detected
-[323011.925044] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323011.939245] sd 2:0:0:0: rejecting I/O to offline device
-[323011.966699] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323011.983919] sd 2:0:0:0: rejecting I/O to offline device
-[323012.025730] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323012.037082] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323012.065183] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323012.071975] EXT4-fs (sda1): previous I/O error to superblock detected
-[323012.103509] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323012.131505] sd 2:0:0:0: rejecting I/O to offline device
-[323012.160388] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323012.172994] sd 2:0:0:0: rejecting I/O to offline device
-[323012.189383] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323012.210571] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323012.210595] EXT4-fs (sda1): previous I/O error to superblock detected
-[323012.210658] sd 2:0:0:0: rejecting I/O to offline device
-[323056.493063] sd 2:0:0:0: rejecting I/O to offline device
-[323056.504994] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323056.508020] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323056.524648] EXT4-fs (sda1): previous I/O error to superblock detected
-[323056.553725] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323056.576268] sd 2:0:0:0: rejecting I/O to offline device
-[323056.605632] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323056.633163] sd 2:0:0:0: rejecting I/O to offline device
-[323056.661251] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323056.671848] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323056.699161] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323056.719066] EXT4-fs (sda1): previous I/O error to superblock detected
-[323056.744244] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323056.755510] sd 2:0:0:0: rejecting I/O to offline device
-[323056.780748] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323056.792716] sd 2:0:0:0: rejecting I/O to offline device
-[323056.828281] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323056.840846] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323056.841059] EXT4-fs (sda1): previous I/O error to superblock detected
-[323056.841123] sd 2:0:0:0: rejecting I/O to offline device
-[323056.846777] sd 2:0:0:0: rejecting I/O to offline device
-[323056.884285] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323056.906106] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323056.919798] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323056.928182] EXT4-fs (sda1): previous I/O error to superblock detected
-[323057.039005] sd 2:0:0:0: rejecting I/O to offline device
-[323417.121268] sd 2:0:0:0: rejecting I/O to offline device
-[323417.138560] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323417.152216] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323417.160085] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323417.164356] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[323417.183699] EXT4-fs (sda1): previous I/O error to superblock detected
-[323417.183783] sd 2:0:0:0: rejecting I/O to offline device
-[323417.189731] sd 2:0:0:0: rejecting I/O to offline device
-[323417.189830] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323417.189851] EXT4-fs (sda1): previous I/O error to superblock detected
-[323417.190115] sd 2:0:0:0: rejecting I/O to offline device
-[323417.191352] sd 2:0:0:0: rejecting I/O to offline device
-[323417.191426] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323417.191443] EXT4-fs (sda1): previous I/O error to superblock detected
-[323417.191501] sd 2:0:0:0: rejecting I/O to offline device
-[323417.215463] sd 2:0:0:0: rejecting I/O to offline device
-[323417.229670] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323417.253565] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323417.267445] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323417.279514] EXT4-fs (sda1): previous I/O error to superblock detected
-[323417.292963] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323417.317562] sd 2:0:0:0: rejecting I/O to offline device
-[323417.535345] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323417.578288] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323417.614990] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323417.642616] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323423.667783] sd 2:0:0:0: rejecting I/O to offline device
-[323423.679716] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323423.681861] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323423.703051] EXT4-fs (sda1): previous I/O error to superblock detected
-[323423.724396] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323423.736976] sd 2:0:0:0: rejecting I/O to offline device
-[323423.768747] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323423.785304] sd 2:0:0:0: rejecting I/O to offline device
-[323423.800879] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323423.806998] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323423.807020] EXT4-fs (sda1): previous I/O error to superblock detected
-[323423.807076] sd 2:0:0:0: rejecting I/O to offline device
-[323423.831785] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323423.849617] sd 2:0:0:0: rejecting I/O to offline device
-[323423.862158] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323423.869639] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323423.869730] EXT4-fs (sda1): previous I/O error to superblock detected
-[323423.897801] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323423.902195] sd 2:0:0:0: rejecting I/O to offline device
-[323423.926939] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323423.948828] sd 2:0:0:0: rejecting I/O to offline device
-[323423.966622] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323423.978547] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323423.999434] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323424.011684] EXT4-fs (sda1): previous I/O error to superblock detected
-[323424.096695] sd 2:0:0:0: rejecting I/O to offline device
-[323429.704403] sd 2:0:0:0: rejecting I/O to offline device
-[323429.714169] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323429.716480] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323429.733959] EXT4-fs (sda1): previous I/O error to superblock detected
-[323429.758982] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323429.767125] sd 2:0:0:0: rejecting I/O to offline device
-[323429.785753] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323429.801865] sd 2:0:0:0: rejecting I/O to offline device
-[323429.820440] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323429.824489] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323429.849525] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323429.866754] EXT4-fs (sda1): previous I/O error to superblock detected
-[323429.893607] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323429.903955] sd 2:0:0:0: rejecting I/O to offline device
-[323429.937456] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323429.947996] sd 2:0:0:0: rejecting I/O to offline device
-[323429.977610] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323429.980751] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323430.002632] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323430.018954] EXT4-fs (sda1): previous I/O error to superblock detected
-[323430.038011] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323430.048440] sd 2:0:0:0: rejecting I/O to offline device
-[323430.083555] sd 2:0:0:0: rejecting I/O to offline device
-[323430.094200] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323430.114779] EXT4-fs (sda1): previous I/O error to superblock detected
-[323430.127270] sd 2:0:0:0: rejecting I/O to offline device
-[323435.748887] sd 2:0:0:0: rejecting I/O to offline device
-[323435.759430] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323435.761075] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323435.781976] EXT4-fs (sda1): previous I/O error to superblock detected
-[323435.806390] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323435.814837] sd 2:0:0:0: rejecting I/O to offline device
-[323435.834867] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323435.851673] sd 2:0:0:0: rejecting I/O to offline device
-[323435.871102] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323435.874909] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323435.899806] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323435.915560] EXT4-fs (sda1): previous I/O error to superblock detected
-[323435.937477] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323435.946343] sd 2:0:0:0: rejecting I/O to offline device
-[323435.966622] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323435.977431] sd 2:0:0:0: rejecting I/O to offline device
-[323436.000059] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323436.004390] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323436.028505] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323436.043795] EXT4-fs (sda1): previous I/O error to superblock detected
-[323436.043854] sd 2:0:0:0: rejecting I/O to offline device
-[323436.061846] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323436.078619] sd 2:0:0:0: rejecting I/O to offline device
-[323436.118111] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269185: comm python3: reading directory lblock 0
-[323436.138585] EXT4-fs (sda1): previous I/O error to superblock detected
-[323436.150045] sd 2:0:0:0: rejecting I/O to offline device
-[323454.641276] sd 2:0:0:0: rejecting I/O to offline device
-[323454.658564] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323454.664988] EXT4-fs error (device sda1): ext4_find_entry:1455: inode #269174: comm python3: reading directory lblock 0
-[323454.688951] systemd-journald[393]: Failed to write entry (9 items, 330 bytes), ignoring: Read-only file system
-[323454.713279] EXT4-fs (sda1): previous I/O error to superblock detected
-[323454.738344] systemd-journald[393]: Failed to write entry (9 items, 281 bytes), ignoring: Read-only file system
-[323454.756288] sd 2:0:0:0: rejecting I/O to offline device
-[323454.784080] systemd-journald[393]: Failed to write entry (12 items, 338 bytes), ignoring: Read-only file system
-[323454.829733] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[323454.855496] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[323454.886107] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[323454.920084] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
-[323454.951325] systemd-journald[393]: Failed to write entry (21 items, 608 bytes), ignoring: Read-only file system
-[323454.982695] systemd-journald[393]: Failed to write entry (21 items, 699 bytes), ignoring: Read-only file system
+ubuntu-bionic login: [  127.816598] cloud-init[908]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'modules:config' at Wed, 05 Aug 2020 14:59:37 +0000. Up 125.07 seconds.
+[  148.552534] cloud-init[1003]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 running 'modules:final' at Wed, 05 Aug 2020 14:59:56 +0000. Up 144.08 seconds.
+[  148.660568] cloud-init[1003]: Cloud-init v. 20.2-45-g5f7825e2-0ubuntu1~18.04.1 finished at Wed, 05 Aug 2020 15:00:00 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 148.25 seconds
